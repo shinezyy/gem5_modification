@@ -1,4 +1,6 @@
 build
 tests
+m5out
+util
 *.pyc
 *.o
