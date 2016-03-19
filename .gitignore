@@ -4,3 +4,4 @@ m5out
 util
 *.pyc
 *.o
+tags
