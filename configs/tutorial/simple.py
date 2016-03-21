@@ -12,7 +12,13 @@ system.mem_ranges = [AddrRange('512MB')]
 
 system.cpu = TimingSimpleCPU()
 
-system.membus = coherentXBar() # system-wide memory bus
+system.membus = CoherentXBar() # system-wide memory bus
+
+system.membus.forward_latency = 1 # set the bus's latency, with is not mentioned in the tutorial
+system.membus.frontend_latency = 1 
+system.membus.response_latency = 1 
+system.membus.snoop_response_latency = 1 
+system.membus.width = 16
 
 system.cpu.icache_port = system.membus.slave # connect cache ports directly to the membus
 system.cpu.dcache_port = system.membus.slave
@@ -26,8 +32,8 @@ system.cpu.dcache_port = system.membus.slave
 
 system.cpu.createInterruptController()
 system.cpu.interrupts.pio = system.membus.master
-system.cpu.interrputs.int_master = system.membus.slave
-system.cpu.interrputs.int_slave = system.membus.master
+system.cpu.interrupts.int_master = system.membus.slave
+system.cpu.interrupts.int_slave = system.membus.master
 
 system.system_port = system.membus.slave # x86 specific, allow system to r/w memory
 
@@ -36,7 +42,7 @@ system.mem_ctrl.range = system.mem_ranges[0]
 system.mem_ctrl.port = system.membus.master
 
 process = LiveProcess()
-process.cmd = ['test/test.progs/hello/bin/x86/linux/hello']
+process.cmd = ['tests/test-progs/hello/bin/x86/linux/hello']
 system.cpu.workload = process
 system.cpu.createThreads()
 
