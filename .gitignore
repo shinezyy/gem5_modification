@@ -6,3 +6,4 @@ util
 *.pyc
 *.o
 tags
+fs-image
