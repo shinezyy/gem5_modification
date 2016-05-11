@@ -1,0 +1,1 @@
+build/X86/gem5.opt configs/example/fs.py --kernel=/home/zyy/open_source_projects/gem5/m5/binaries/x86_64-vmlinux-2.6.22.9 --disk-image=/home/zyy/open_source_projects/gem5/m5/disks/linux-x86.img
