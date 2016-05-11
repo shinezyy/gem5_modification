@@ -18,8 +18,14 @@ class l1cache(BaseCache):
 class l1icache(l1cache):
     size = '16kB'
 
+    def connectCPU(self, cpu):
+        self.cpu_side = cpu.icache_port
+
 class l1dcache(l1cache):
     size = '64kB'
+
+    def connectCPU(self, cpu):
+        self.cpu_side = cpu.dcache_port
 
 class l2cache(BaseCache):
     size = '256kB'
@@ -29,3 +35,8 @@ class l2cache(BaseCache):
     mshrs = 20
     tgts_per_mshr = 12
 
+    def connectCPUSideBus(self, bus):
+        self.cpu_side = bus.master
+
+    def connectMemSideBus(self, bus):
+        self.mem_side = bus.slave
