@@ -14,13 +14,19 @@ system.mem_ranges = [AddrRange('512MB')]
 system.cpu = TimingSimpleCPU()
 
 system.cpu.icache = l1icache()
-system.cpu.dcache = l1dcahce()
+system.cpu.dcache = l1dcache()
 
 system.cpu.icache.connectCPU(system.cpu)
 system.cpu.dcache.connectCPU(system.cpu)
 #l1 cache cannot be connected to l2 directly, because l2 expectes only 1 post
 #so l2 bus is needed
 system.l2bus = CoherentXBar() 
+system.l2bus.forward_latency = 0
+system.l2bus.frontend_latency = 0
+system.l2bus.response_latency = 0
+system.l2bus.snoop_response_latency = 0
+system.l2bus.width = 16
+
 system.cpu.icache.connectBus(system.l2bus)
 system.cpu.dcache.connectBus(system.l2bus) # connect l2bus with l1 cache
 
@@ -31,10 +37,10 @@ system.membus = CoherentXBar() # system-wide memory bus
 system.l2cache.connectMemSideBus(system.membus)
 
 # set the bus's latency, with is not mentioned in the tutorial
-system.membus.forward_latency = 100
-system.membus.frontend_latency = 100
-system.membus.response_latency = 100
-system.membus.snoop_response_latency = 100 
+system.membus.forward_latency = 0
+system.membus.frontend_latency = 0
+system.membus.response_latency = 0
+system.membus.snoop_response_latency = 0 
 system.membus.width = 16
 
 # system.cpu.icache_port = system.membus.slave # connect cache ports directly to the membus
