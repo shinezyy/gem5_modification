@@ -64,9 +64,11 @@ class PhysRegFile
 
     /** Integer register file. */
     std::vector<IntReg> intRegFile;
+    std::vector<uint64_t> intRegWriteCount;
 
     /** Floating point register file. */
     std::vector<PhysFloatReg> floatRegFile;
+    std::vector<uint64_t> floatRegWriteCount;
 
     /** Condition-code register file. */
     std::vector<CCReg> ccRegFile;
@@ -215,8 +217,10 @@ class PhysRegFile
         DPRINTF(IEW, "RegFile: Setting int register %i to %#x\n",
                 int(reg_idx), val);
 
-        if (reg_idx != TheISA::ZeroReg)
+        if (reg_idx != TheISA::ZeroReg) {
             intRegFile[reg_idx] = val;
+            intRegWriteCount[reg_idx] += 1;
+        }
     }
 
     /** Sets a double precision floating point register to the given value. */
@@ -231,9 +235,14 @@ class PhysRegFile
                 int(reg_idx), (uint64_t)val);
 
 #if THE_ISA == ALPHA_ISA
-        if (reg_offset != TheISA::ZeroReg)
-#endif
+        if (reg_offset != TheISA::ZeroReg) {
             floatRegFile[reg_offset].d = val;
+            floatRegWriteCount[reg_offset] += 1;
+        }
+#else
+        floatRegFile[reg_offset].d = val;
+        floatRegWriteCount[reg_offset] += 1;
+#endif
     }
 
     void setFloatRegBits(PhysRegIndex reg_idx, FloatRegBits val)
