@@ -31,9 +31,11 @@ system.cpu.dcache_port = system.membus.slave
 
 
 system.cpu.createInterruptController()
+print type(system.cpu.interrupts.pio)
 system.cpu.interrupts.pio = system.membus.master
 system.cpu.interrupts.int_master = system.membus.slave
 system.cpu.interrupts.int_slave = system.membus.master
+
 
 system.system_port = system.membus.slave # x86 specific, allow system to r/w memory
 

@@ -722,7 +722,9 @@ class FullO3CPU : public BaseO3CPU
     Stats::Vector committedOps;
 
     //TODO: add Vector to count write accesses here
-    //
+    Stats::Vector intRegWrites_v;
+    Stats::Vector floatRegWrites_v;
+
     /** Stat for the CPI per thread. */
     Stats::Formula cpi;
     /** Stat for the total CPI. */

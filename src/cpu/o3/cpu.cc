@@ -462,7 +462,7 @@ FullO3CPU<Impl>::regStats()
         .flags(Stats::total);
 
     //TODO: init write count here
-
+    
     cpi
         .name(name() + ".cpi")
         .desc("CPI: Cycles Per Instruction")
@@ -535,6 +535,19 @@ FullO3CPU<Impl>::regStats()
         .name(name() + ".misc_regfile_writes")
         .desc("number of misc regfile writes")
         .prereq(miscRegfileWrites);
+
+    intRegWrites_v
+        .init(regFile.numIntPhysRegs())
+        .name(name() + ".intRegWrites_v")
+        .desc("Number of Write Accesses to each phy int reg")
+        .flags(Stats::total);
+
+    floatRegWrites_v
+        .init(regFile.numFloatPhysRegs())
+        .name(name() + ".floatRegWrites_v")
+        .desc("Number of Write Accesses to each phy float reg")
+        .flags(Stats::total);
+
 }
 
 template <class Impl>
@@ -1277,6 +1290,7 @@ void
 FullO3CPU<Impl>::setIntReg(int reg_idx, uint64_t val)
 {
     intRegfileWrites++;
+    intRegWrites_v[reg_idx]++;
     regFile.setIntReg(reg_idx, val);
 }
 
@@ -1285,6 +1299,7 @@ void
 FullO3CPU<Impl>::setFloatReg(int reg_idx, FloatReg val)
 {
     fpRegfileWrites++;
+    floatRegWrites_v[reg_idx]++;
     regFile.setFloatReg(reg_idx, val);
 }
 
@@ -1293,6 +1308,7 @@ void
 FullO3CPU<Impl>::setFloatRegBits(int reg_idx, FloatRegBits val)
 {
     fpRegfileWrites++;
+    floatRegWrites_v[reg_idx]++;
     regFile.setFloatRegBits(reg_idx, val);
 }
 
@@ -1351,6 +1367,7 @@ FullO3CPU<Impl>::setArchIntReg(int reg_idx, uint64_t val, ThreadID tid)
     intRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupInt(reg_idx);
 
+    intRegWrites_v[phys_reg]++;
     regFile.setIntReg(phys_reg, val);
 }
 
@@ -1361,6 +1378,7 @@ FullO3CPU<Impl>::setArchFloatReg(int reg_idx, float val, ThreadID tid)
     fpRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupFloat(reg_idx);
 
+    floatRegWrites_v[phys_reg]++;
     regFile.setFloatReg(phys_reg, val);
 }
 
@@ -1371,6 +1389,7 @@ FullO3CPU<Impl>::setArchFloatRegInt(int reg_idx, uint64_t val, ThreadID tid)
     fpRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupFloat(reg_idx);
 
+    floatRegWrites_v[phys_reg]++;
     regFile.setFloatRegBits(phys_reg, val);
 }
 
