@@ -337,7 +337,7 @@ class BaseSimpleCPU : public BaseCPU, public ExecContext
 
         // calculate flatten index
         int flatIndex = thread->isa->flattenIntIndex(idx);
-        IntRegWrites_v[idx]++;
+        IntRegWrites_v[flatIndex]++;
         
         thread->setIntReg(si->destRegIdx(idx), val);
     }

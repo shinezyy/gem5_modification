@@ -104,6 +104,7 @@ class SimpleThread : public ThreadState
     typedef TheISA::CCReg CCReg;
   public:
     typedef ThreadContext::Status Status;
+    TheISA::ISA *const isa;    // get it public for the convenience of counting
 
   protected:
     union {
@@ -114,7 +115,7 @@ class SimpleThread : public ThreadState
 #ifdef ISA_HAS_CC_REGS
     TheISA::CCReg ccRegs[TheISA::NumCCRegs];
 #endif
-    TheISA::ISA *const isa;    // one "instance" of the current ISA.
+    //TheISA::ISA *const isa;    // one "instance" of the current ISA.
 
     TheISA::PCState _pcState;
 

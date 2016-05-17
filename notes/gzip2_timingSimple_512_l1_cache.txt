@@ -4,11 +4,11 @@ sim_seconds                                  0.058195                       # Nu
 sim_ticks                                 58195254000                       # Number of ticks simulated
 final_tick                                58195254000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 sim_freq                                 1000000000000                       # Frequency of simulated ticks
-host_inst_rate                                 396496                       # Simulator instruction rate (inst/s)
-host_op_rate                                   713853                       # Simulator op (including micro ops) rate (op/s)
-host_tick_rate                             5354360308                       # Simulator tick rate (ticks/s)
+host_inst_rate                                 392684                       # Simulator instruction rate (inst/s)
+host_op_rate                                   706990                       # Simulator op (including micro ops) rate (op/s)
+host_tick_rate                             5302885847                       # Simulator tick rate (ticks/s)
 host_mem_usage                                4357776                       # Number of bytes of host memory used
-host_seconds                                    10.87                       # Real time elapsed on the host
+host_seconds                                    10.97                       # Real time elapsed on the host
 sim_insts                                     4309405                       # Number of instructions simulated
 sim_ops                                       7758684                       # Number of ops (including micro ops) simulated
 system.voltage_domain.voltage                       1                       # Voltage in Volts
@@ -288,8 +288,104 @@ system.cpu.num_int_insts                      7758248                       # nu
 system.cpu.num_fp_insts                           611                       # number of float instructions
 system.cpu.num_int_register_reads            13795227                       # number of times the integer registers were read
 system.cpu.num_int_register_writes            6034302                       # number of times the integer registers were written
+system.cpu.int_register_writes::0             6034234                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::1                  38                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::2                  29                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::3                   1                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::4                   0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::5                   0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::6                   0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::7                   0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::8                   0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::9                   0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::10                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::11                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::12                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::13                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::14                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::15                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::16                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::17                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::18                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::19                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::20                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::21                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::22                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::23                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::24                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::25                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::26                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::27                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::28                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::29                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::30                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::31                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::32                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::33                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::34                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::35                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::36                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::37                  0                       # Writes to each Architectural int registers
+system.cpu.int_register_writes::total         6034302                       # Writes to each Architectural int registers
 system.cpu.num_fp_register_reads                  919                       # number of times the floating registers were read
 system.cpu.num_fp_register_writes                 381                       # number of times the floating registers were written
+system.cpu.float_register_writes::0                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::1                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::2                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::3                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::4                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::5                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::6                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::7                 0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::8                22                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::9                22                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::10               16                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::11               16                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::12                2                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::13                2                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::14                8                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::15                8                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::16               12                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::17               12                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::18                4                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::19                4                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::20                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::21                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::22                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::23                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::24               34                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::25               34                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::26               17                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::27               17                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::28               17                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::29               17                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::30               17                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::31               17                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::32               28                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::33               28                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::34                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::35                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::36                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::37                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::38                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::39                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::40                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::41               18                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::42                9                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::43                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::44                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::45                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::46                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::47                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::48                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::49                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::50                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::51                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::52                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::53                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::54                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::55                0                       # Writes to each Architectural float registers
+system.cpu.float_register_writes::total           381                       # Writes to each Architectural float registers
 system.cpu.num_cc_register_reads              4310954                       # number of times the CC registers were read
 system.cpu.num_cc_register_writes             3446000                       # number of times the CC registers were written
 system.cpu.num_mem_refs                       1723785                       # number of memory refs
