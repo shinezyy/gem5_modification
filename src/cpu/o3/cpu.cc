@@ -1299,7 +1299,7 @@ void
 FullO3CPU<Impl>::setFloatReg(int reg_idx, FloatReg val)
 {
     fpRegfileWrites++;
-    floatRegWrites_v[reg_idx]++;
+    floatRegWrites_v[reg_idx - regFile.numIntPhysRegs()]++;
     regFile.setFloatReg(reg_idx, val);
 }
 
@@ -1308,7 +1308,7 @@ void
 FullO3CPU<Impl>::setFloatRegBits(int reg_idx, FloatRegBits val)
 {
     fpRegfileWrites++;
-    floatRegWrites_v[reg_idx]++;
+    floatRegWrites_v[reg_idx - regFile.numIntPhysRegs()]++;
     regFile.setFloatRegBits(reg_idx, val);
 }
 
@@ -1367,6 +1367,7 @@ FullO3CPU<Impl>::setArchIntReg(int reg_idx, uint64_t val, ThreadID tid)
     intRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupInt(reg_idx);
 
+    assert(regFile.isIntPhysReg(phys_reg));
     intRegWrites_v[phys_reg]++;
     regFile.setIntReg(phys_reg, val);
 }
@@ -1378,7 +1379,7 @@ FullO3CPU<Impl>::setArchFloatReg(int reg_idx, float val, ThreadID tid)
     fpRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupFloat(reg_idx);
 
-    floatRegWrites_v[phys_reg]++;
+    //floatRegWrites_v[phys_reg - regFile.numIntPhysRegs()]++;
     regFile.setFloatReg(phys_reg, val);
 }
 
@@ -1389,7 +1390,7 @@ FullO3CPU<Impl>::setArchFloatRegInt(int reg_idx, uint64_t val, ThreadID tid)
     fpRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupFloat(reg_idx);
 
-    floatRegWrites_v[phys_reg]++;
+    //floatRegWrites_v[phys_reg - regFile.numIntPhysRegs()]++;
     regFile.setFloatRegBits(phys_reg, val);
 }
 

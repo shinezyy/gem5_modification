@@ -64,11 +64,9 @@ class PhysRegFile
 
     /** Integer register file. */
     std::vector<IntReg> intRegFile;
-    std::vector<uint64_t> intRegWriteCount;
 
     /** Floating point register file. */
     std::vector<PhysFloatReg> floatRegFile;
-    std::vector<uint64_t> floatRegWriteCount;
 
     /** Condition-code register file. */
     std::vector<CCReg> ccRegFile;
@@ -219,7 +217,6 @@ class PhysRegFile
 
         if (reg_idx != TheISA::ZeroReg) {
             intRegFile[reg_idx] = val;
-            intRegWriteCount[reg_idx] += 1;
         }
     }
 
@@ -237,11 +234,9 @@ class PhysRegFile
 #if THE_ISA == ALPHA_ISA
         if (reg_offset != TheISA::ZeroReg) {
             floatRegFile[reg_offset].d = val;
-            floatRegWriteCount[reg_offset] += 1;
         }
 #else
         floatRegFile[reg_offset].d = val;
-        floatRegWriteCount[reg_offset] += 1;
 #endif
     }
 
