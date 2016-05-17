@@ -231,9 +231,15 @@ class BaseSimpleCPU : public BaseCPU, public ExecContext
     Stats::Scalar numIntRegReads;
     Stats::Scalar numIntRegWrites;
 
+    //number of integer register file writes
+    Stats::Vector IntRegWrites_v;
+
     //number of float register file accesses
     Stats::Scalar numFpRegReads;
     Stats::Scalar numFpRegWrites;
+
+    //number of float register file writes
+    Stats::Vector FpRegWrites_v;
 
     //number of condition code register file accesses
     Stats::Scalar numCCRegReads;
@@ -328,6 +334,11 @@ class BaseSimpleCPU : public BaseCPU, public ExecContext
     void setIntRegOperand(const StaticInst *si, int idx, IntReg val)
     {
         numIntRegWrites++;
+
+        // calculate flatten index
+        int flatIndex = thread->isa->flattenIntIndex(idx);
+        IntRegWrites_v[idx]++;
+        
         thread->setIntReg(si->destRegIdx(idx), val);
     }
 
@@ -335,6 +346,10 @@ class BaseSimpleCPU : public BaseCPU, public ExecContext
     {
         numFpRegWrites++;
         int reg_idx = si->destRegIdx(idx) - TheISA::FP_Reg_Base;
+
+        int flatIndex = thread->isa->flattenFloatIndex(reg_idx);
+        FpRegWrites_v[flatIndex]++;
+
         thread->setFloatReg(reg_idx, val);
     }
 
@@ -343,6 +358,10 @@ class BaseSimpleCPU : public BaseCPU, public ExecContext
     {
         numFpRegWrites++;
         int reg_idx = si->destRegIdx(idx) - TheISA::FP_Reg_Base;
+
+        int flatIndex = thread->isa->flattenFloatIndex(reg_idx);
+        FpRegWrites_v[flatIndex]++;
+
         thread->setFloatRegBits(reg_idx, val);
     }
 
@@ -381,6 +400,7 @@ class BaseSimpleCPU : public BaseCPU, public ExecContext
     void setMiscReg(int misc_reg, const MiscReg &val)
     {
         numIntRegWrites++;
+
         return thread->setMiscReg(misc_reg, val);
     }
 
