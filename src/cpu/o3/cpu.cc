@@ -1367,8 +1367,7 @@ FullO3CPU<Impl>::setArchIntReg(int reg_idx, uint64_t val, ThreadID tid)
     intRegfileWrites++;
     PhysRegIndex phys_reg = commitRenameMap[tid].lookupInt(reg_idx);
 
-    assert(regFile.isIntPhysReg(phys_reg));
-    intRegWrites_v[phys_reg]++;
+    //intRegWrites_v[phys_reg]++;
     regFile.setIntReg(phys_reg, val);
 }
 
