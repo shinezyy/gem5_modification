@@ -193,7 +193,8 @@ if [[ !(-d "$OUTPUT_DIR") ]]; then
     exit 1
 fi
  
-RUN_DIR=$SPEC_DIR/benchspec/CPU2006/$BENCHMARK_CODE/run/run_base_ref\_my-alpha.0000     # Run directory for the selected SPEC benchmark
+# RUN_DIR=$SPEC_DIR/benchspec/CPU2006/$BENCHMARK_CODE/run/run_base_ref\_my-alpha.0000     # Run directory for the selected SPEC benchmark
+RUN_DIR=$SPEC_DIR/benchspec/CPU2006/$BENCHMARK_CODE/exe
 SCRIPT_OUT=$OUTPUT_DIR/runscript.log                                                                    # File log for this script's stdout henceforth
  
 ################## REPORT SCRIPT CONFIGURATION ###################
@@ -222,4 +223,5 @@ echo "" | tee -a $SCRIPT_OUT
 echo "" | tee -a $SCRIPT_OUT
  
 # Actually launch gem5!
-$GEM5_DIR/build/X86/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err <YOUR_SIMULATOR_OPTIONS_HERE> | tee -a $SCRIPT_OUT
+# $GEM5_DIR/build/X86/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err <YOUR_SIMULATOR_OPTIONS_HERE> \| tee -a $SCRIPT_OUT
+$GEM5_DIR/build/X86/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=DerivO3CPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
