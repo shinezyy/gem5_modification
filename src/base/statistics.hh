@@ -1020,6 +1020,7 @@ class VectorBase : public DataWrapVec<Derived, VectorInfoProxy>
      */
     const Storage *data(off_type index) const { return &storage[index]; }
 
+    // ZYYNOTE: do vector memory allocation here
     void
     doInit(size_type s)
     {

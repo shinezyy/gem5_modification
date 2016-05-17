@@ -461,6 +461,8 @@ FullO3CPU<Impl>::regStats()
         .desc("Number of Ops (including micro ops) Simulated")
         .flags(Stats::total);
 
+    //TODO: init write count here
+
     cpi
         .name(name() + ".cpi")
         .desc("CPI: Cycles Per Instruction")
@@ -501,6 +503,8 @@ FullO3CPU<Impl>::regStats()
         .name(name() + ".int_regfile_writes")
         .desc("number of integer regfile writes")
         .prereq(intRegfileWrites);
+
+    // TODO: maybe increase the count here ?
 
     fpRegfileReads
         .name(name() + ".fp_regfile_reads")
