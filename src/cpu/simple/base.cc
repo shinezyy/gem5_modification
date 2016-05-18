@@ -278,20 +278,6 @@ BaseSimpleCPU::regStats()
         statExecutedInstType.subname(i, Enums::OpClassStrings[i]);
     }
 
-    IntRegWrites_v
-        .init(TheISA::NumIntRegs)
-        .name(name() + ".int_register_writes")
-        .desc("Writes to each Architectural int registers")
-        .flags(total)
-        ;
-
-    FpRegWrites_v
-        .init(TheISA::NumFloatRegs)
-        .name(name() + ".float_register_writes")
-        .desc("Writes to each Architectural float registers")
-        .flags(total)
-        ;
-
     idleFraction = constant(1.0) - notIdleFraction;
     numIdleCycles = idleFraction * numCycles;
     numBusyCycles = (notIdleFraction)*numCycles;
