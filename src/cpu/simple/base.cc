@@ -147,6 +147,7 @@ BaseSimpleCPU::regStats()
     using namespace Stats;
 
     BaseCPU::regStats();
+    //thread->regStats(".Z thread test");
 
     numInsts
         .name(name() + ".committedInsts")

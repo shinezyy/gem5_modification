@@ -45,6 +45,7 @@
 #ifndef __CPU_SIMPLE_THREAD_HH__
 #define __CPU_SIMPLE_THREAD_HH__
 
+#include "base/statistics.hh"
 #include "arch/decoder.hh"
 #include "arch/isa.hh"
 #include "arch/isa_traits.hh"
@@ -146,6 +147,10 @@ class SimpleThread : public ThreadState
     SimpleThread(BaseCPU *_cpu, int _thread_num, System *_system,
                  Process *_process, TheISA::TLB *_itb, TheISA::TLB *_dtb,
                  TheISA::ISA *_isa);
+
+    // count writes to thread directly
+    Stats::Vector IntRegWrites_v;
+    Stats::Vector FpRegWrites_v;
 
     virtual ~SimpleThread();
 
@@ -431,14 +436,24 @@ class SimpleThread : public ThreadState
     }
 
     uint64_t readIntRegFlat(int idx) { return intRegs[idx]; }
-    void setIntRegFlat(int idx, uint64_t val) { intRegs[idx] = val; }
+    void setIntRegFlat(int idx, uint64_t val) 
+    { 
+        intRegs[idx] = val; 
+        IntRegWrites_v[idx]++;
+    }
 
     FloatReg readFloatRegFlat(int idx) { return floatRegs.f[idx]; }
-    void setFloatRegFlat(int idx, FloatReg val) { floatRegs.f[idx] = val; }
+    void setFloatRegFlat(int idx, FloatReg val) 
+    {
+        floatRegs.f[idx] = val; 
+        FpRegWrites_v[idx]++;
+    }
 
     FloatRegBits readFloatRegBitsFlat(int idx) { return floatRegs.i[idx]; }
-    void setFloatRegBitsFlat(int idx, FloatRegBits val) {
+    void setFloatRegBitsFlat(int idx, FloatRegBits val) 
+    {
         floatRegs.i[idx] = val;
+        FpRegWrites_v[idx]++;
     }
 
 #ifdef ISA_HAS_CC_REGS

@@ -1,0 +1,4 @@
+2016年 05月 18日 星期三 23:31:47 CST
+I tried to avoid to modify simple_thread, but I have to do it now.
+Because I found that the flatten index is usually 0, which is not
+expected

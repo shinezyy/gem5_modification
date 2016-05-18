@@ -99,6 +99,7 @@ SimpleThread::SimpleThread(BaseCPU *_cpu, int _thread_num, System *_sys,
 
     if (use_kernel_stats)
         kernelStats = new TheISA::Kernel::Statistics(system);
+
 }
 
 SimpleThread::~SimpleThread()
@@ -197,8 +198,23 @@ SimpleThread::halt()
 void
 SimpleThread::regStats(const string &name)
 {
+    using namespace Stats;
     if (FullSystem && kernelStats)
         kernelStats->regStats(name + ".kern");
+
+    IntRegWrites_v
+        .init(TheISA::NumIntRegs)
+        .name(name + ".thread_int_register_Writes")
+        .desc("Writes to each int register of thread")
+        .flags(total)
+        ;
+
+    FpRegWrites_v
+        .init(TheISA::NumFloatRegs)
+        .name(name + ".thread_float_register_Writes")
+        .desc("Writes to each float register of thread")
+        .flags(total)
+        ;
 }
 
 void
