@@ -6,7 +6,8 @@ from m5.objects import *
 #spec_dir = '<FULL_PATH_TO_YOUR_SPEC_CPU2006_INSTALL>'
 #out_dir = '<FULL_PATH_TO_DESIRED_OUTPUT_DIRECTORY>'
  
-my_suffix = '_base.gcc43-64bit'
+my_suffix = '_base.gcc-arm-A7-little-endian'
+# my_suffix = '_base.gcc43-64bit'
  
 #temp
 #binary_dir = spec_dir
