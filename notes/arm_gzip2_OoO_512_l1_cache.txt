@@ -1,0 +1,1484 @@
+
+---------- Begin Simulation Statistics ----------
+sim_seconds                                  0.017024                       # Number of seconds simulated
+sim_ticks                                 17023511500                       # Number of ticks simulated
+final_tick                                17023511500                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
+sim_freq                                 1000000000000                       # Frequency of simulated ticks
+host_inst_rate                                  53435                       # Simulator instruction rate (inst/s)
+host_op_rate                                    53452                       # Simulator op (including micro ops) rate (op/s)
+host_tick_rate                              211093565                       # Simulator tick rate (ticks/s)
+host_mem_usage                                4355732                       # Number of bytes of host memory used
+host_seconds                                    80.64                       # Real time elapsed on the host
+sim_insts                                     4309230                       # Number of instructions simulated
+sim_ops                                       4310618                       # Number of ops (including micro ops) simulated
+system.voltage_domain.voltage                       1                       # Voltage in Volts
+system.clk_domain.clock                          1000                       # Clock period in ticks
+system.mem_ctrls.bytes_read::cpu.inst           29248                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_read::cpu.data        55061696                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_read::total           55090944                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_inst_read::cpu.inst        29248                       # Number of instructions bytes read from this memory
+system.mem_ctrls.bytes_inst_read::total         29248                       # Number of instructions bytes read from this memory
+system.mem_ctrls.bytes_written::writebacks     55018368                       # Number of bytes written to this memory
+system.mem_ctrls.bytes_written::total        55018368                       # Number of bytes written to this memory
+system.mem_ctrls.num_reads::cpu.inst              457                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_reads::cpu.data           860339                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_reads::total              860796                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_writes::writebacks        859662                       # Number of write requests responded to by this memory
+system.mem_ctrls.num_writes::total             859662                       # Number of write requests responded to by this memory
+system.mem_ctrls.bw_read::cpu.inst            1718094                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::cpu.data         3234449955                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::total            3236168049                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_inst_read::cpu.inst       1718094                       # Instruction read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_inst_read::total          1718094                       # Instruction read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_write::writebacks      3231904769                       # Write bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_write::total           3231904769                       # Write bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_total::writebacks      3231904769                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::cpu.inst           1718094                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::cpu.data        3234449955                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::total           6468072818                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.readReqs                      860797                       # Number of read requests accepted
+system.mem_ctrls.writeReqs                     859662                       # Number of write requests accepted
+system.mem_ctrls.readBursts                    860797                       # Number of DRAM read bursts, including those serviced by the write queue
+system.mem_ctrls.writeBursts                   859662                       # Number of DRAM write bursts, including those merged in the write queue
+system.mem_ctrls.bytesReadDRAM               55091008                       # Total number of bytes read from DRAM
+system.mem_ctrls.bytesReadWrQ                       0                       # Total number of bytes read from write queue
+system.mem_ctrls.bytesWritten                55016448                       # Total number of bytes written to DRAM
+system.mem_ctrls.bytesReadSys                55091008                       # Total read bytes from the system interface side
+system.mem_ctrls.bytesWrittenSys             55018368                       # Total written bytes from the system interface side
+system.mem_ctrls.servicedByWrQ                      0                       # Number of DRAM read bursts serviced by the write queue
+system.mem_ctrls.mergedWrBursts                     0                       # Number of DRAM write bursts merged with an existing one
+system.mem_ctrls.neitherReadNorWriteReqs            0                       # Number of requests that are neither read nor write
+system.mem_ctrls.perBankRdBursts::0             53815                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::1             53774                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::2             53784                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::3             53854                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::4             53791                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::5             53782                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::6             53809                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::7             53803                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::8             53770                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::9             53832                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::10            53807                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::11            53792                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::12            53806                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::13            53769                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::14            53821                       # Per bank write bursts
+system.mem_ctrls.perBankRdBursts::15            53788                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::0             53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::1             53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::2             53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::3             53730                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::4             53730                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::5             53729                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::6             53726                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::7             53721                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::8             53720                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::9             53724                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::10            53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::11            53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::12            53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::13            53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::14            53728                       # Per bank write bursts
+system.mem_ctrls.perBankWrBursts::15            53728                       # Per bank write bursts
+system.mem_ctrls.numRdRetry                         0                       # Number of times read queue was full causing retry
+system.mem_ctrls.numWrRetry                         0                       # Number of times write queue was full causing retry
+system.mem_ctrls.totGap                   17023504500                       # Total gap between requests
+system.mem_ctrls.readPktSize::0                     0                       # Read request sizes (log2)
+system.mem_ctrls.readPktSize::1                     0                       # Read request sizes (log2)
+system.mem_ctrls.readPktSize::2                     0                       # Read request sizes (log2)
+system.mem_ctrls.readPktSize::3                     0                       # Read request sizes (log2)
+system.mem_ctrls.readPktSize::4                     0                       # Read request sizes (log2)
+system.mem_ctrls.readPktSize::5                     0                       # Read request sizes (log2)
+system.mem_ctrls.readPktSize::6                860797                       # Read request sizes (log2)
+system.mem_ctrls.writePktSize::0                    0                       # Write request sizes (log2)
+system.mem_ctrls.writePktSize::1                    0                       # Write request sizes (log2)
+system.mem_ctrls.writePktSize::2                    0                       # Write request sizes (log2)
+system.mem_ctrls.writePktSize::3                    0                       # Write request sizes (log2)
+system.mem_ctrls.writePktSize::4                    0                       # Write request sizes (log2)
+system.mem_ctrls.writePktSize::5                    0                       # Write request sizes (log2)
+system.mem_ctrls.writePktSize::6               859662                       # Write request sizes (log2)
+system.mem_ctrls.rdQLenPdf::0                  164767                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::1                  222266                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::2                  228067                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::3                  245683                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::4                      14                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::5                       0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::6                       0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::7                       0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::8                       0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::9                       0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::10                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::11                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::12                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::13                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::14                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::15                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::16                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::17                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::18                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::19                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::20                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::21                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::22                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::23                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::24                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::25                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::26                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::27                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::28                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::29                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::30                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.rdQLenPdf::31                      0                       # What read queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::0                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::1                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::2                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::3                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::4                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::5                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::6                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::7                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::8                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::9                       1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::10                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::11                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::12                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::13                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::14                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::15                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::16                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::17                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::18                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::19                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::20                   4255                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::21                  86332                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::22                 168720                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::23                  60265                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::24                  54297                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::25                  54134                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::26                  57358                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::27                  65360                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::28                  60105                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::29                  59618                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::30                  53940                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::31                  61272                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::32                  73365                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::33                    458                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::34                    159                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::35                      3                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::36                      1                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::37                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::38                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::39                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::40                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::41                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::42                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::43                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::44                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::45                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::46                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::47                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::48                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::49                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::50                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::51                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::52                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::53                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::54                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::55                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::56                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::57                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::58                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::59                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::60                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::61                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::62                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.wrQLenPdf::63                      0                       # What write queue length does an incoming req see
+system.mem_ctrls.bytesPerActivate::samples       219400                       # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::mean    501.849845                       # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::gmean   495.295196                       # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::stdev    55.916949                       # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::0-127          432      0.20%      0.20% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::128-255         3671      1.67%      1.87% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::256-383         1339      0.61%      2.48% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::384-511         3241      1.48%      3.96% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::512-639       210698     96.03%     99.99% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::640-767            6      0.00%     99.99% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::768-895            2      0.00%     99.99% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::896-1023            1      0.00%    100.00% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::1024-1151           10      0.00%    100.00% # Bytes accessed per row activation
+system.mem_ctrls.bytesPerActivate::total       219400                       # Bytes accessed per row activation
+system.mem_ctrls.rdPerTurnAround::samples        53727                       # Reads before turning the bus around for writes
+system.mem_ctrls.rdPerTurnAround::mean      16.018296                       # Reads before turning the bus around for writes
+system.mem_ctrls.rdPerTurnAround::gmean     15.995622                       # Reads before turning the bus around for writes
+system.mem_ctrls.rdPerTurnAround::stdev      4.236615                       # Reads before turning the bus around for writes
+system.mem_ctrls.rdPerTurnAround::0-31          53726    100.00%    100.00% # Reads before turning the bus around for writes
+system.mem_ctrls.rdPerTurnAround::992-1023            1      0.00%    100.00% # Reads before turning the bus around for writes
+system.mem_ctrls.rdPerTurnAround::total         53727                       # Reads before turning the bus around for writes
+system.mem_ctrls.wrPerTurnAround::samples        53727                       # Writes before turning the bus around for reads
+system.mem_ctrls.wrPerTurnAround::mean             16                       # Writes before turning the bus around for reads
+system.mem_ctrls.wrPerTurnAround::gmean     16.000000                       # Writes before turning the bus around for reads
+system.mem_ctrls.wrPerTurnAround::16            53727    100.00%    100.00% # Writes before turning the bus around for reads
+system.mem_ctrls.wrPerTurnAround::total         53727                       # Writes before turning the bus around for reads
+system.mem_ctrls.totQLat                  26148356500                       # Total ticks spent queuing
+system.mem_ctrls.totMemAccLat             42288300250                       # Total ticks spent from burst creation until serviced by the DRAM
+system.mem_ctrls.totBusLat                 4303985000                       # Total ticks spent in databus transfers
+system.mem_ctrls.avgQLat                     30376.91                       # Average queueing delay per DRAM burst
+system.mem_ctrls.avgBusLat                    5000.00                       # Average bus latency per DRAM burst
+system.mem_ctrls.avgMemAccLat                49126.91                       # Average memory access latency per DRAM burst
+system.mem_ctrls.avgRdBW                      3236.17                       # Average DRAM read bandwidth in MiByte/s
+system.mem_ctrls.avgWrBW                      3231.79                       # Average achieved write bandwidth in MiByte/s
+system.mem_ctrls.avgRdBWSys                   3236.17                       # Average system read bandwidth in MiByte/s
+system.mem_ctrls.avgWrBWSys                   3231.90                       # Average system write bandwidth in MiByte/s
+system.mem_ctrls.peakBW                      12800.00                       # Theoretical peak bandwidth in MiByte/s
+system.mem_ctrls.busUtil                        50.53                       # Data bus utilization in percentage
+system.mem_ctrls.busUtilRead                    25.28                       # Data bus utilization in percentage for reads
+system.mem_ctrls.busUtilWrite                   25.25                       # Data bus utilization in percentage for writes
+system.mem_ctrls.avgRdQLen                       3.56                       # Average read queue length when enqueuing
+system.mem_ctrls.avgWrQLen                      26.23                       # Average write queue length when enqueuing
+system.mem_ctrls.readRowHits                   751067                       # Number of row buffer hits during reads
+system.mem_ctrls.writeRowHits                  749952                       # Number of row buffer hits during writes
+system.mem_ctrls.readRowHitRate                 87.25                       # Row buffer hit rate for reads
+system.mem_ctrls.writeRowHitRate                87.24                       # Row buffer hit rate for writes
+system.mem_ctrls.avgGap                       9894.75                       # Average gap between requests
+system.mem_ctrls.pageHitRate                    87.25                       # Row buffer hit rate, read and write combined
+system.mem_ctrls_0.actEnergy                834873480                       # Energy for activate commands per rank (pJ)
+system.mem_ctrls_0.preEnergy                455536125                       # Energy for precharge commands per rank (pJ)
+system.mem_ctrls_0.readEnergy              3357112200                       # Energy for read commands per rank (pJ)
+system.mem_ctrls_0.writeEnergy             2785233600                       # Energy for write commands per rank (pJ)
+system.mem_ctrls_0.refreshEnergy           1111712160                       # Energy for refresh commands per rank (pJ)
+system.mem_ctrls_0.actBackEnergy          11485526220                       # Energy for active background per rank (pJ)
+system.mem_ctrls_0.preBackEnergy            137578500                       # Energy for precharge background per rank (pJ)
+system.mem_ctrls_0.totalEnergy            20167572285                       # Total energy per rank (pJ)
+system.mem_ctrls_0.averagePower           1184.863952                       # Core power per rank (mW)
+system.mem_ctrls_0.memoryStateTime::IDLE    169153000                       # Time in different power states
+system.mem_ctrls_0.memoryStateTime::REF     568360000                       # Time in different power states
+system.mem_ctrls_0.memoryStateTime::PRE_PDN            0                       # Time in different power states
+system.mem_ctrls_0.memoryStateTime::ACT   16284102500                       # Time in different power states
+system.mem_ctrls_0.memoryStateTime::ACT_PDN            0                       # Time in different power states
+system.mem_ctrls_1.actEnergy                823714920                       # Energy for activate commands per rank (pJ)
+system.mem_ctrls_1.preEnergy                449447625                       # Energy for precharge commands per rank (pJ)
+system.mem_ctrls_1.readEnergy              3356636400                       # Energy for read commands per rank (pJ)
+system.mem_ctrls_1.writeEnergy             2785181760                       # Energy for write commands per rank (pJ)
+system.mem_ctrls_1.refreshEnergy           1111712160                       # Energy for refresh commands per rank (pJ)
+system.mem_ctrls_1.actBackEnergy          11151339210                       # Energy for active background per rank (pJ)
+system.mem_ctrls_1.preBackEnergy            430725000                       # Energy for precharge background per rank (pJ)
+system.mem_ctrls_1.totalEnergy            20108757075                       # Total energy per rank (pJ)
+system.mem_ctrls_1.averagePower           1181.408503                       # Core power per rank (mW)
+system.mem_ctrls_1.memoryStateTime::IDLE    656606000                       # Time in different power states
+system.mem_ctrls_1.memoryStateTime::REF     568360000                       # Time in different power states
+system.mem_ctrls_1.memoryStateTime::PRE_PDN            0                       # Time in different power states
+system.mem_ctrls_1.memoryStateTime::ACT   15796050250                       # Time in different power states
+system.mem_ctrls_1.memoryStateTime::ACT_PDN            0                       # Time in different power states
+system.cpu.branchPred.lookups                  864166                       # Number of BP lookups
+system.cpu.branchPred.condPredicted            862921                       # Number of conditional branches predicted
+system.cpu.branchPred.condIncorrect               663                       # Number of conditional branches incorrect
+system.cpu.branchPred.BTBLookups               863281                       # Number of BTB lookups
+system.cpu.branchPred.BTBHits                  861284                       # Number of BTB hits
+system.cpu.branchPred.BTBCorrect                    0                       # Number of correct BTB predictions (this stat may not work properly.
+system.cpu.branchPred.BTBHitPct             99.768673                       # BTB Hit Percentage
+system.cpu.branchPred.usedRAS                     421                       # Number of times the RAS was used to get a target.
+system.cpu.branchPred.RASInCorrect                 10                       # Number of incorrect RAS predictions.
+system.cpu_voltage_domain.voltage                   1                       # Voltage in Volts
+system.cpu_clk_domain.clock                       500                       # Clock period in ticks
+system.cpu.dstage2_mmu.stage2_tlb.walker.walks            0                       # Table walker walks requested
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin_Requested::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin_Requested::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin_Requested::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin_Completed::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin_Completed::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin_Completed::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.walker.walkRequestOrigin::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.dstage2_mmu.stage2_tlb.inst_hits            0                       # ITB inst hits
+system.cpu.dstage2_mmu.stage2_tlb.inst_misses            0                       # ITB inst misses
+system.cpu.dstage2_mmu.stage2_tlb.read_hits            0                       # DTB read hits
+system.cpu.dstage2_mmu.stage2_tlb.read_misses            0                       # DTB read misses
+system.cpu.dstage2_mmu.stage2_tlb.write_hits            0                       # DTB write hits
+system.cpu.dstage2_mmu.stage2_tlb.write_misses            0                       # DTB write misses
+system.cpu.dstage2_mmu.stage2_tlb.flush_tlb            0                       # Number of times complete TLB was flushed
+system.cpu.dstage2_mmu.stage2_tlb.flush_tlb_mva            0                       # Number of times TLB was flushed by MVA
+system.cpu.dstage2_mmu.stage2_tlb.flush_tlb_mva_asid            0                       # Number of times TLB was flushed by MVA & ASID
+system.cpu.dstage2_mmu.stage2_tlb.flush_tlb_asid            0                       # Number of times TLB was flushed by ASID
+system.cpu.dstage2_mmu.stage2_tlb.flush_entries            0                       # Number of entries that have been flushed from TLB
+system.cpu.dstage2_mmu.stage2_tlb.align_faults            0                       # Number of TLB faults due to alignment restrictions
+system.cpu.dstage2_mmu.stage2_tlb.prefetch_faults            0                       # Number of TLB faults due to prefetch
+system.cpu.dstage2_mmu.stage2_tlb.domain_faults            0                       # Number of TLB faults due to domain restrictions
+system.cpu.dstage2_mmu.stage2_tlb.perms_faults            0                       # Number of TLB faults due to permissions restrictions
+system.cpu.dstage2_mmu.stage2_tlb.read_accesses            0                       # DTB read accesses
+system.cpu.dstage2_mmu.stage2_tlb.write_accesses            0                       # DTB write accesses
+system.cpu.dstage2_mmu.stage2_tlb.inst_accesses            0                       # ITB inst accesses
+system.cpu.dstage2_mmu.stage2_tlb.hits              0                       # DTB hits
+system.cpu.dstage2_mmu.stage2_tlb.misses            0                       # DTB misses
+system.cpu.dstage2_mmu.stage2_tlb.accesses            0                       # DTB accesses
+system.cpu.dtb.walker.walks                         0                       # Table walker walks requested
+system.cpu.dtb.walker.walkRequestOrigin_Requested::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.walker.walkRequestOrigin_Requested::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.walker.walkRequestOrigin_Requested::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.walker.walkRequestOrigin_Completed::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.walker.walkRequestOrigin_Completed::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.walker.walkRequestOrigin_Completed::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.walker.walkRequestOrigin::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.dtb.inst_hits                            0                       # ITB inst hits
+system.cpu.dtb.inst_misses                          0                       # ITB inst misses
+system.cpu.dtb.read_hits                            0                       # DTB read hits
+system.cpu.dtb.read_misses                          0                       # DTB read misses
+system.cpu.dtb.write_hits                           0                       # DTB write hits
+system.cpu.dtb.write_misses                         0                       # DTB write misses
+system.cpu.dtb.flush_tlb                            0                       # Number of times complete TLB was flushed
+system.cpu.dtb.flush_tlb_mva                        0                       # Number of times TLB was flushed by MVA
+system.cpu.dtb.flush_tlb_mva_asid                   0                       # Number of times TLB was flushed by MVA & ASID
+system.cpu.dtb.flush_tlb_asid                       0                       # Number of times TLB was flushed by ASID
+system.cpu.dtb.flush_entries                        0                       # Number of entries that have been flushed from TLB
+system.cpu.dtb.align_faults                         0                       # Number of TLB faults due to alignment restrictions
+system.cpu.dtb.prefetch_faults                      0                       # Number of TLB faults due to prefetch
+system.cpu.dtb.domain_faults                        0                       # Number of TLB faults due to domain restrictions
+system.cpu.dtb.perms_faults                         0                       # Number of TLB faults due to permissions restrictions
+system.cpu.dtb.read_accesses                        0                       # DTB read accesses
+system.cpu.dtb.write_accesses                       0                       # DTB write accesses
+system.cpu.dtb.inst_accesses                        0                       # ITB inst accesses
+system.cpu.dtb.hits                                 0                       # DTB hits
+system.cpu.dtb.misses                               0                       # DTB misses
+system.cpu.dtb.accesses                             0                       # DTB accesses
+system.cpu.istage2_mmu.stage2_tlb.walker.walks            0                       # Table walker walks requested
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin_Requested::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin_Requested::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin_Requested::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin_Completed::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin_Completed::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin_Completed::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.walker.walkRequestOrigin::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.istage2_mmu.stage2_tlb.inst_hits            0                       # ITB inst hits
+system.cpu.istage2_mmu.stage2_tlb.inst_misses            0                       # ITB inst misses
+system.cpu.istage2_mmu.stage2_tlb.read_hits            0                       # DTB read hits
+system.cpu.istage2_mmu.stage2_tlb.read_misses            0                       # DTB read misses
+system.cpu.istage2_mmu.stage2_tlb.write_hits            0                       # DTB write hits
+system.cpu.istage2_mmu.stage2_tlb.write_misses            0                       # DTB write misses
+system.cpu.istage2_mmu.stage2_tlb.flush_tlb            0                       # Number of times complete TLB was flushed
+system.cpu.istage2_mmu.stage2_tlb.flush_tlb_mva            0                       # Number of times TLB was flushed by MVA
+system.cpu.istage2_mmu.stage2_tlb.flush_tlb_mva_asid            0                       # Number of times TLB was flushed by MVA & ASID
+system.cpu.istage2_mmu.stage2_tlb.flush_tlb_asid            0                       # Number of times TLB was flushed by ASID
+system.cpu.istage2_mmu.stage2_tlb.flush_entries            0                       # Number of entries that have been flushed from TLB
+system.cpu.istage2_mmu.stage2_tlb.align_faults            0                       # Number of TLB faults due to alignment restrictions
+system.cpu.istage2_mmu.stage2_tlb.prefetch_faults            0                       # Number of TLB faults due to prefetch
+system.cpu.istage2_mmu.stage2_tlb.domain_faults            0                       # Number of TLB faults due to domain restrictions
+system.cpu.istage2_mmu.stage2_tlb.perms_faults            0                       # Number of TLB faults due to permissions restrictions
+system.cpu.istage2_mmu.stage2_tlb.read_accesses            0                       # DTB read accesses
+system.cpu.istage2_mmu.stage2_tlb.write_accesses            0                       # DTB write accesses
+system.cpu.istage2_mmu.stage2_tlb.inst_accesses            0                       # ITB inst accesses
+system.cpu.istage2_mmu.stage2_tlb.hits              0                       # DTB hits
+system.cpu.istage2_mmu.stage2_tlb.misses            0                       # DTB misses
+system.cpu.istage2_mmu.stage2_tlb.accesses            0                       # DTB accesses
+system.cpu.itb.walker.walks                         0                       # Table walker walks requested
+system.cpu.itb.walker.walkRequestOrigin_Requested::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.walker.walkRequestOrigin_Requested::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.walker.walkRequestOrigin_Requested::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.walker.walkRequestOrigin_Completed::Data            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.walker.walkRequestOrigin_Completed::Inst            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.walker.walkRequestOrigin_Completed::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.walker.walkRequestOrigin::total            0                       # Table walker requests started/completed, data/inst
+system.cpu.itb.inst_hits                            0                       # ITB inst hits
+system.cpu.itb.inst_misses                          0                       # ITB inst misses
+system.cpu.itb.read_hits                            0                       # DTB read hits
+system.cpu.itb.read_misses                          0                       # DTB read misses
+system.cpu.itb.write_hits                           0                       # DTB write hits
+system.cpu.itb.write_misses                         0                       # DTB write misses
+system.cpu.itb.flush_tlb                            0                       # Number of times complete TLB was flushed
+system.cpu.itb.flush_tlb_mva                        0                       # Number of times TLB was flushed by MVA
+system.cpu.itb.flush_tlb_mva_asid                   0                       # Number of times TLB was flushed by MVA & ASID
+system.cpu.itb.flush_tlb_asid                       0                       # Number of times TLB was flushed by ASID
+system.cpu.itb.flush_entries                        0                       # Number of entries that have been flushed from TLB
+system.cpu.itb.align_faults                         0                       # Number of TLB faults due to alignment restrictions
+system.cpu.itb.prefetch_faults                      0                       # Number of TLB faults due to prefetch
+system.cpu.itb.domain_faults                        0                       # Number of TLB faults due to domain restrictions
+system.cpu.itb.perms_faults                         0                       # Number of TLB faults due to permissions restrictions
+system.cpu.itb.read_accesses                        0                       # DTB read accesses
+system.cpu.itb.write_accesses                       0                       # DTB write accesses
+system.cpu.itb.inst_accesses                        0                       # ITB inst accesses
+system.cpu.itb.hits                                 0                       # DTB hits
+system.cpu.itb.misses                               0                       # DTB misses
+system.cpu.itb.accesses                             0                       # DTB accesses
+system.cpu.workload.num_syscalls                   17                       # Number of system calls
+system.cpu.numCycles                         34047024                       # number of cpu cycles simulated
+system.cpu.numWorkItemsStarted                      0                       # number of work items this cpu started
+system.cpu.numWorkItemsCompleted                    0                       # number of work items this cpu completed
+system.cpu.fetch.icacheStallCycles              12993                       # Number of cycles fetch is stalled on an Icache miss
+system.cpu.fetch.Insts                        4321522                       # Number of instructions fetch has processed
+system.cpu.fetch.Branches                      864166                       # Number of branches that fetch encountered
+system.cpu.fetch.predictedBranches             861705                       # Number of branches that fetch has predicted taken
+system.cpu.fetch.Cycles                      34007984                       # Number of cycles fetch has run and was not squashing or blocked
+system.cpu.fetch.SquashCycles                    1421                       # Number of cycles fetch has spent squashing
+system.cpu.fetch.PendingTrapStallCycles            27                       # Number of stall cycles due to pending traps
+system.cpu.fetch.CacheLines                      3486                       # Number of cache lines fetched
+system.cpu.fetch.IcacheSquashes                   465                       # Number of outstanding Icache misses that were squashed
+system.cpu.fetch.rateDist::samples           34021714                       # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::mean              0.127113                       # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::stdev             0.732314                       # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::underflows               0      0.00%      0.00% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::0                 32870442     96.62%     96.62% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::1                   143718      0.42%     97.04% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::2                   143881      0.42%     97.46% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::3                   143778      0.42%     97.88% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::4                   143796      0.42%     98.31% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::5                   573822      1.69%     99.99% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::6                      228      0.00%     99.99% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::7                      258      0.00%     99.99% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::8                     1791      0.01%    100.00% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::overflows                0      0.00%    100.00% # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::min_value                0                       # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::max_value                8                       # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.rateDist::total             34021714                       # Number of instructions fetched each cycle (Total)
+system.cpu.fetch.branchRate                  0.025382                       # Number of branch fetches per cycle
+system.cpu.fetch.rate                        0.126928                       # Number of inst fetches per cycle
+system.cpu.decode.IdleCycles                   189230                       # Number of cycles decode is idle
+system.cpu.decode.BlockedCycles              33290746                       # Number of cycles decode is blocked
+system.cpu.decode.RunCycles                      3481                       # Number of cycles decode is running
+system.cpu.decode.UnblockCycles                537774                       # Number of cycles decode is unblocking
+system.cpu.decode.SquashCycles                    483                       # Number of cycles decode is squashing
+system.cpu.decode.BranchResolved                  557                       # Number of times decode resolved a branch
+system.cpu.decode.BranchMispred                   235                       # Number of times decode detected a branch misprediction
+system.cpu.decode.DecodedInsts                4320279                       # Number of instructions handled by decode
+system.cpu.decode.SquashedInsts                   816                       # Number of squashed instructions handled by decode
+system.cpu.rename.SquashCycles                    483                       # Number of cycles rename is squashing
+system.cpu.rename.IdleCycles                   368741                       # Number of cycles rename is idle
+system.cpu.rename.BlockCycles                14236999                       # Number of cycles rename is blocking
+system.cpu.rename.serializeStallCycles           7022                       # count of cycles rename stalled for serializing inst
+system.cpu.rename.RunCycles                    361719                       # Number of cycles rename is running
+system.cpu.rename.UnblockCycles              19046750                       # Number of cycles rename is unblocking
+system.cpu.rename.RenamedInsts                4319212                       # Number of instructions processed by rename
+system.cpu.rename.ROBFullEvents                     7                       # Number of times rename has blocked due to ROB full
+system.cpu.rename.IQFullEvents                 995214                       # Number of times rename has blocked due to IQ full
+system.cpu.rename.LQFullEvents                      9                       # Number of times rename has blocked due to LQ full
+system.cpu.rename.SQFullEvents               19013606                       # Number of times rename has blocked due to SQ full
+system.cpu.rename.RenamedOperands             4319649                       # Number of destination operands rename has renamed
+system.cpu.rename.RenameLookups              20726935                       # Number of register rename lookups that rename has made
+system.cpu.rename.int_rename_lookups          6041420                       # Number of integer rename lookups
+system.cpu.rename.fp_rename_lookups                84                       # Number of floating rename lookups
+system.cpu.rename.CommittedMaps               4310572                       # Number of HB maps that are committed
+system.cpu.rename.UndoneMaps                     9077                       # Number of HB maps that are undone due to squashing
+system.cpu.rename.serializingInsts                 95                       # count of serializing insts renamed
+system.cpu.rename.tempSerializingInsts             99                       # count of temporary serializing insts renamed
+system.cpu.rename.skidInsts                   3584664                       # count of insts added to the skid buffer
+system.cpu.memDep0.insertedLoads               863402                       # Number of loads inserted to the mem dependence unit.
+system.cpu.memDep0.insertedStores              862769                       # Number of stores inserted to the mem dependence unit.
+system.cpu.memDep0.conflictingLoads               114                       # Number of conflicting loads.
+system.cpu.memDep0.conflictingStores              133                       # Number of conflicting stores.
+system.cpu.iq.iqInstsAdded                    4317741                       # Number of instructions added to the IQ (excludes non-spec)
+system.cpu.iq.iqNonSpecInstsAdded                 132                       # Number of non-speculative instructions added to the IQ
+system.cpu.iq.iqInstsIssued                  21374780                       # Number of instructions issued
+system.cpu.iq.iqSquashedInstsIssued                52                       # Number of squashed instructions issued
+system.cpu.iq.iqSquashedInstsExamined            7255                       # Number of squashed instructions iterated over during squash; mainly for profiling
+system.cpu.iq.iqSquashedOperandsExamined        16397                       # Number of squashed operands that are examined and possibly removed from graph
+system.cpu.iq.iqSquashedNonSpecRemoved             40                       # Number of squashed non-spec instructions that were removed
+system.cpu.iq.issued_per_cycle::samples      34021714                       # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::mean         0.628269                       # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::stdev        1.396393                       # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::underflows            0      0.00%      0.00% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::0            27238248     80.06%     80.06% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::1             1481186      4.35%     84.42% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::2              797388      2.34%     86.76% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::3              252092      0.74%     87.50% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::4             3722194     10.94%     98.44% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::5              530099      1.56%    100.00% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::6                 331      0.00%    100.00% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::7                 123      0.00%    100.00% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::8                  53      0.00%    100.00% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::overflows            0      0.00%    100.00% # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::min_value            0                       # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::max_value            8                       # Number of insts issued each cycle
+system.cpu.iq.issued_per_cycle::total        34021714                       # Number of insts issued each cycle
+system.cpu.iq.fu_full::No_OpClass                   0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::IntAlu                      19      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::IntMult                      0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::IntDiv                       0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::FloatAdd                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::FloatCmp                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::FloatCvt                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::FloatMult                    0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::FloatDiv                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::FloatSqrt                    0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdAdd                      0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdAddAcc                   0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdAlu                      0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdCmp                      0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdCvt                      0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdMisc                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdMult                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdMultAcc                  0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdShift                    0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdShiftAcc                 0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdSqrt                     0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatAdd                 0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatAlu                 0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatCmp                 0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatCvt                 0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatDiv                 0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatMisc                0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatMult                0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatMultAcc             0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::SimdFloatSqrt                0      0.00%      0.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::MemRead                3979248     99.44%     99.44% # attempts to use FU when none available
+system.cpu.iq.fu_full::MemWrite                 22388      0.56%    100.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::IprAccess                    0      0.00%    100.00% # attempts to use FU when none available
+system.cpu.iq.fu_full::InstPrefetch                 0      0.00%    100.00% # attempts to use FU when none available
+system.cpu.iq.FU_type_0::No_OpClass                 0      0.00%      0.00% # Type of FU issued
+system.cpu.iq.FU_type_0::IntAlu               2589894     12.12%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::IntMult                   15      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::IntDiv                     4      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::FloatAdd                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::FloatCmp                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::FloatCvt                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::FloatMult                  0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::FloatDiv                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::FloatSqrt                  0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdAdd                    0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdAddAcc                 0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdAlu                    0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdCmp                    0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdCvt                    0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdMisc                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdMult                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdMultAcc                0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdShift                  0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdShiftAcc               0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdSqrt                   0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatAdd               0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatAlu               0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatCmp               0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatCvt               0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatDiv               0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatMisc              0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatMult              0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatMultAcc            0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::SimdFloatSqrt              0      0.00%     12.12% # Type of FU issued
+system.cpu.iq.FU_type_0::MemRead             17922515     83.85%     95.97% # Type of FU issued
+system.cpu.iq.FU_type_0::MemWrite              862352      4.03%    100.00% # Type of FU issued
+system.cpu.iq.FU_type_0::IprAccess                  0      0.00%    100.00% # Type of FU issued
+system.cpu.iq.FU_type_0::InstPrefetch               0      0.00%    100.00% # Type of FU issued
+system.cpu.iq.FU_type_0::total               21374780                       # Type of FU issued
+system.cpu.iq.rate                           0.627802                       # Inst issue rate
+system.cpu.iq.fu_busy_cnt                     4001655                       # FU busy when requested
+system.cpu.iq.fu_busy_rate                   0.187214                       # FU busy rate (busy events/executed inst)
+system.cpu.iq.int_inst_queue_reads           80772812                       # Number of integer instruction queue reads
+system.cpu.iq.int_inst_queue_writes           4325028                       # Number of integer instruction queue writes
+system.cpu.iq.int_inst_queue_wakeup_accesses      4314044                       # Number of integer instruction queue wakeup accesses
+system.cpu.iq.fp_inst_queue_reads                 169                       # Number of floating instruction queue reads
+system.cpu.iq.fp_inst_queue_writes                146                       # Number of floating instruction queue writes
+system.cpu.iq.fp_inst_queue_wakeup_accesses           59                       # Number of floating instruction queue wakeup accesses
+system.cpu.iq.int_alu_accesses               25376347                       # Number of integer alu accesses
+system.cpu.iq.fp_alu_accesses                      88                       # Number of floating point alu accesses
+system.cpu.iew.lsq.thread0.forwLoads               77                       # Number of loads that had data forwarded from stores
+system.cpu.iew.lsq.thread0.invAddrLoads             0                       # Number of loads ignored due to an invalid address
+system.cpu.iew.lsq.thread0.squashedLoads         1627                       # Number of loads squashed
+system.cpu.iew.lsq.thread0.ignoredResponses            5                       # Number of memory responses ignored because the instruction is squashed
+system.cpu.iew.lsq.thread0.memOrderViolation           46                       # Number of memory ordering violations
+system.cpu.iew.lsq.thread0.squashedStores          912                       # Number of stores squashed
+system.cpu.iew.lsq.thread0.invAddrSwpfs             0                       # Number of software prefetches ignored due to an invalid address
+system.cpu.iew.lsq.thread0.blockedLoads             0                       # Number of blocked loads due to partial load-store forwarding
+system.cpu.iew.lsq.thread0.rescheduledLoads           43                       # Number of loads that were rescheduled
+system.cpu.iew.lsq.thread0.cacheBlocked      17851901                       # Number of times an access to memory failed due to the cache being blocked
+system.cpu.iew.iewIdleCycles                        0                       # Number of cycles IEW is idle
+system.cpu.iew.iewSquashCycles                    483                       # Number of cycles IEW is squashing
+system.cpu.iew.iewBlockCycles                    1146                       # Number of cycles IEW is blocking
+system.cpu.iew.iewUnblockCycles              14235760                       # Number of cycles IEW is unblocking
+system.cpu.iew.iewDispatchedInsts             4317889                       # Number of instructions dispatched to IQ
+system.cpu.iew.iewDispSquashedInsts                58                       # Number of squashed instructions skipped by dispatch
+system.cpu.iew.iewDispLoadInsts                863402                       # Number of dispatched load instructions
+system.cpu.iew.iewDispStoreInsts               862769                       # Number of dispatched store instructions
+system.cpu.iew.iewDispNonSpecInsts                 89                       # Number of dispatched non-speculative instructions
+system.cpu.iew.iewIQFullEvents                     10                       # Number of times the IQ has become full, causing a stall
+system.cpu.iew.iewLSQFullEvents              14235749                       # Number of times the LSQ has become full, causing a stall
+system.cpu.iew.memOrderViolationEvents             46                       # Number of memory order violations
+system.cpu.iew.predictedTakenIncorrect             93                       # Number of branches that were predicted taken incorrectly
+system.cpu.iew.predictedNotTakenIncorrect          392                       # Number of branches that were predicted not taken incorrectly
+system.cpu.iew.branchMispredicts                  485                       # Number of branch mispredicts detected at execute
+system.cpu.iew.iewExecutedInsts              21374186                       # Number of executed instructions
+system.cpu.iew.iewExecLoadInsts              17922336                       # Number of load instructions executed
+system.cpu.iew.iewExecSquashedInsts               594                       # Number of squashed instructions skipped in execute
+system.cpu.iew.exec_swp                             0                       # number of swp insts executed
+system.cpu.iew.exec_nop                            16                       # number of nop insts executed
+system.cpu.iew.exec_refs                     18784559                       # number of memory reference insts executed
+system.cpu.iew.exec_branches                   862368                       # Number of branches executed
+system.cpu.iew.exec_stores                     862223                       # Number of stores executed
+system.cpu.iew.exec_rate                     0.627784                       # Inst execution rate
+system.cpu.iew.wb_sent                        4314328                       # cumulative count of insts sent to commit
+system.cpu.iew.wb_count                       4314103                       # cumulative count of insts written-back
+system.cpu.iew.wb_producers                   2551043                       # num instructions producing a value
+system.cpu.iew.wb_consumers                   3415836                       # num instructions consuming a value
+system.cpu.iew.wb_penalized                         0                       # number of instrctions required to write to 'other' IQ
+system.cpu.iew.wb_rate                       0.126710                       # insts written-back per cycle
+system.cpu.iew.wb_fanout                     0.746828                       # average fanout of values written-back
+system.cpu.iew.wb_penalized_rate                    0                       # fraction of instructions written-back that wrote to 'other' IQ
+system.cpu.commit.commitSquashedInsts            7274                       # The number of squashed insts skipped by commit
+system.cpu.commit.commitNonSpecStalls              92                       # The number of times commit has been forced to stall to communicate backwards
+system.cpu.commit.branchMispredicts               436                       # The number of times a branch was mispredicted
+system.cpu.commit.committed_per_cycle::samples     34020441                       # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::mean     0.126707                       # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::stdev     0.976464                       # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::underflows            0      0.00%      0.00% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::0     33412052     98.21%     98.21% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::1        48465      0.14%     98.35% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::2          766      0.00%     98.36% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::3          381      0.00%     98.36% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::4          314      0.00%     98.36% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::5        47139      0.14%     98.50% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::6        20920      0.06%     98.56% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::7        26225      0.08%     98.64% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::8       464179      1.36%    100.00% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::overflows            0      0.00%    100.00% # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::min_value            0                       # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::max_value            8                       # Number of insts commited each cycle
+system.cpu.commit.committed_per_cycle::total     34020441                       # Number of insts commited each cycle
+system.cpu.commit.committedInsts              4309230                       # Number of instructions committed
+system.cpu.commit.committedOps                4310618                       # Number of ops (including micro ops) committed
+system.cpu.commit.swp_count                         0                       # Number of s/w prefetches committed
+system.cpu.commit.refs                        1723632                       # Number of memory references committed
+system.cpu.commit.loads                        861775                       # Number of loads committed
+system.cpu.commit.membars                          38                       # Number of memory barriers committed
+system.cpu.commit.branches                     861835                       # Number of branches committed
+system.cpu.commit.fp_insts                         46                       # Number of committed floating point instructions.
+system.cpu.commit.int_insts                   3449127                       # Number of committed integer instructions.
+system.cpu.commit.function_calls                  165                       # Number of function calls committed.
+system.cpu.commit.op_class_0::No_OpClass            0      0.00%      0.00% # Class of committed instruction
+system.cpu.commit.op_class_0::IntAlu          2586972     60.01%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::IntMult              11      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::IntDiv                3      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::FloatAdd              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::FloatCmp              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::FloatCvt              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::FloatMult             0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::FloatDiv              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::FloatSqrt             0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdAdd               0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdAddAcc            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdAlu               0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdCmp               0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdCvt               0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdMisc              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdMult              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdMultAcc            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdShift             0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdShiftAcc            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdSqrt              0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatAdd            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatAlu            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatCmp            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatCvt            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatDiv            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatMisc            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatMult            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatMultAcc            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::SimdFloatSqrt            0      0.00%     60.01% # Class of committed instruction
+system.cpu.commit.op_class_0::MemRead          861775     19.99%     80.01% # Class of committed instruction
+system.cpu.commit.op_class_0::MemWrite         861857     19.99%    100.00% # Class of committed instruction
+system.cpu.commit.op_class_0::IprAccess             0      0.00%    100.00% # Class of committed instruction
+system.cpu.commit.op_class_0::InstPrefetch            0      0.00%    100.00% # Class of committed instruction
+system.cpu.commit.op_class_0::total           4310618                       # Class of committed instruction
+system.cpu.commit.bw_lim_events                464179                       # number cycles where commit BW limit reached
+system.cpu.rob.rob_reads                     37873933                       # The number of ROB reads
+system.cpu.rob.rob_writes                     8637069                       # The number of ROB writes
+system.cpu.timesIdled                             314                       # Number of times that the entire CPU went into an idle state and unscheduled itself
+system.cpu.idleCycles                           25310                       # Total number of cycles that the CPU has spent unscheduled due to idling
+system.cpu.committedInsts                     4309230                       # Number of Instructions Simulated
+system.cpu.committedOps                       4310618                       # Number of Ops (including micro ops) Simulated
+system.cpu.intRegWrites_v::0                     8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::1                     5364                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::2                     8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::3                     8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::4                     5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::5                     8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::6                     8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::7                     5373                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::8                     8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::9                     8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::10                    5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::11                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::12                    5365                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::13                    8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::14                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::15                    8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::16                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::17                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::18                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::19                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::20                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::21                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::22                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::23                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::24                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::25                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::26                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::27                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::28                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::29                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::30                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::31                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::32                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::33                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::34                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::35                    8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::36                    8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::37                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::38                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::39                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::40                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::41                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::42                       0                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::43                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::44                    8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::45                    8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::46                    5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::47                    5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::48                    8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::49                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::50                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::51                    8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::52                    8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::53                    8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::54                    8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::55                    8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::56                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::57                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::58                      30                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::59                    8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::60                    8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::61                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::62                    8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::63                    5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::64                    5370                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::65                    8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::66                    5372                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::67                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::68                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::69                    5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::70                    8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::71                    8042                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::72                    5368                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::73                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::74                    8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::75                    8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::76                    8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::77                    8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::78                    8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::79                    8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::80                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::81                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::82                    8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::83                    8044                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::84                    8042                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::85                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::86                    8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::87                    8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::88                    5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::89                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::90                    8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::91                    5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::92                    5365                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::93                    5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::94                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::95                    8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::96                    5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::97                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::98                    8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::99                    8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::100                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::101                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::102                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::103                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::104                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::105                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::106                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::107                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::108                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::109                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::110                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::111                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::112                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::113                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::114                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::115                   5368                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::116                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::117                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::118                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::119                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::120                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::121                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::122                   8042                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::123                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::124                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::125                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::126                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::127                   5373                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::128                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::129                   5372                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::130                   5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::131                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::132                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::133                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::134                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::135                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::136                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::137                   5377                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::138                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::139                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::140                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::141                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::142                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::143                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::144                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::145                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::146                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::147                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::148                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::149                   5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::150                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::151                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::152                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::153                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::154                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::155                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::156                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::157                   5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::158                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::159                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::160                   5368                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::161                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::162                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::163                   5375                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::164                   5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::165                   5370                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::166                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::167                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::168                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::169                   5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::170                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::171                   2701                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::172                   8029                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::173                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::174                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::175                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::176                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::177                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::178                   5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::179                   5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::180                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::181                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::182                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::183                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::184                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::185                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::186                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::187                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::188                   5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::189                   2700                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::190                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::191                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::192                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::193                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::194                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::195                   8040                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::196                   5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::197                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::198                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::199                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::200                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::201                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::202                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::203                   5369                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::204                   5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::205                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::206                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::207                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::208                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::209                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::210                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::211                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::212                   5366                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::213                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::214                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::215                   8042                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::216                   5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::217                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::218                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::219                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::220                   8030                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::221                   5372                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::222                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::223                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::224                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::225                   8031                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::226                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::227                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::228                   8033                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::229                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::230                   8032                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::231                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::232                   5367                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::233                   5371                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::234                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::235                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::236                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::237                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::238                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::239                   5366                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::240                   8039                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::241                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::242                   8035                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::243                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::244                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::245                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::246                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::247                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::248                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::249                   8034                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::250                   8045                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::251                   8041                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::252                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::253                   8038                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::254                   8036                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::255                   8037                       # Number of Write Accesses to each phy int reg
+system.cpu.intRegWrites_v::total              1728391                       # Number of Write Accesses to each phy int reg
+system.cpu.floatRegWrites_v::0                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::1                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::2                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::3                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::4                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::5                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::6                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::7                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::8                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::9                      0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::10                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::11                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::12                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::13                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::14                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::15                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::16                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::17                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::18                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::19                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::20                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::21                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::22                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::23                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::24                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::25                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::26                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::27                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::28                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::29                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::30                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::31                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::32                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::33                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::34                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::35                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::36                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::37                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::38                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::39                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::40                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::41                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::42                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::43                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::44                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::45                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::46                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::47                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::48                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::49                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::50                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::51                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::52                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::53                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::54                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::55                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::56                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::57                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::58                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::59                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::60                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::61                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::62                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::63                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::64                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::65                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::66                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::67                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::68                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::69                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::70                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::71                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::72                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::73                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::74                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::75                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::76                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::77                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::78                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::79                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::80                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::81                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::82                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::83                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::84                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::85                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::86                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::87                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::88                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::89                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::90                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::91                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::92                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::93                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::94                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::95                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::96                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::97                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::98                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::99                     0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::100                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::101                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::102                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::103                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::104                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::105                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::106                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::107                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::108                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::109                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::110                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::111                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::112                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::113                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::114                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::115                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::116                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::117                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::118                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::119                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::120                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::121                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::122                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::123                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::124                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::125                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::126                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::127                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::128                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::129                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::130                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::131                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::132                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::133                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::134                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::135                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::136                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::137                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::138                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::139                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::140                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::141                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::142                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::143                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::144                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::145                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::146                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::147                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::148                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::149                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::150                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::151                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::152                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::153                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::154                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::155                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::156                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::157                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::158                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::159                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::160                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::161                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::162                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::163                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::164                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::165                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::166                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::167                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::168                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::169                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::170                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::171                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::172                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::173                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::174                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::175                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::176                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::177                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::178                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::179                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::180                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::181                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::182                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::183                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::184                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::185                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::186                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::187                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::188                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::189                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::190                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::191                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::192                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::193                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::194                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::195                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::196                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::197                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::198                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::199                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::200                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::201                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::202                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::203                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::204                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::205                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::206                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::207                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::208                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::209                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::210                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::211                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::212                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::213                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::214                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::215                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::216                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::217                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::218                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::219                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::220                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::221                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::222                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::223                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::224                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::225                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::226                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::227                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::228                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::229                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::230                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::231                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::232                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::233                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::234                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::235                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::236                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::237                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::238                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::239                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::240                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::241                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::242                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::243                    1                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::244                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::245                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::246                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::247                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::248                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::249                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::250                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::251                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::252                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::253                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::254                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::255                    0                       # Number of Write Accesses to each phy float reg
+system.cpu.floatRegWrites_v::total                 45                       # Number of Write Accesses to each phy float reg
+system.cpu.cpi                               7.900953                       # CPI: Cycles Per Instruction
+system.cpu.cpi_total                         7.900953                       # CPI: Total CPI of All Threads
+system.cpu.ipc                               0.126567                       # IPC: Instructions Per Cycle
+system.cpu.ipc_total                         0.126567                       # IPC: Total IPC of All Threads
+system.cpu.int_regfile_reads                 23095123                       # number of integer regfile reads
+system.cpu.int_regfile_writes                 1728408                       # number of integer regfile writes
+system.cpu.fp_regfile_reads                        50                       # number of floating regfile reads
+system.cpu.fp_regfile_writes                       45                       # number of floating regfile writes
+system.cpu.cc_regfile_reads                  66709727                       # number of cc regfile reads
+system.cpu.cc_regfile_writes                  2585863                       # number of cc regfile writes
+system.cpu.misc_regfile_reads                 1725800                       # number of misc regfile reads
+system.cpu.misc_regfile_writes                     75                       # number of misc regfile writes
+system.cpu.dcache.tags.replacements            859666                       # number of replacements
+system.cpu.dcache.tags.tagsinuse           621.755115                       # Cycle average of tags in use
+system.cpu.dcache.tags.total_refs              863672                       # Total number of references to valid blocks.
+system.cpu.dcache.tags.sampled_refs            860339                       # Sample count of references to valid blocks.
+system.cpu.dcache.tags.avg_refs              1.003874                       # Average number of references to valid blocks.
+system.cpu.dcache.tags.warmup_cycle                 0                       # Cycle when the warmup percentage was hit.
+system.cpu.dcache.tags.occ_blocks::cpu.data   621.755115                       # Average occupied blocks per requestor
+system.cpu.dcache.tags.occ_percent::cpu.data     0.075898                       # Average percentage of cache occupancy
+system.cpu.dcache.tags.occ_percent::total     0.075898                       # Average percentage of cache occupancy
+system.cpu.dcache.tags.occ_task_id_blocks::1024          673                       # Occupied blocks per task id
+system.cpu.dcache.tags.age_task_id_blocks_1024::0          219                       # Occupied blocks per task id
+system.cpu.dcache.tags.age_task_id_blocks_1024::1          343                       # Occupied blocks per task id
+system.cpu.dcache.tags.age_task_id_blocks_1024::3            1                       # Occupied blocks per task id
+system.cpu.dcache.tags.age_task_id_blocks_1024::4          110                       # Occupied blocks per task id
+system.cpu.dcache.tags.occ_task_id_percent::1024     0.082153                       # Percentage of cache occupancy per task id
+system.cpu.dcache.tags.tag_accesses           4309267                       # Number of tag accesses
+system.cpu.dcache.tags.data_accesses          4309267                       # Number of data accesses
+system.cpu.dcache.ReadReq_hits::cpu.data       862299                       # number of ReadReq hits
+system.cpu.dcache.ReadReq_hits::total          862299                       # number of ReadReq hits
+system.cpu.dcache.WriteReq_hits::cpu.data         1242                       # number of WriteReq hits
+system.cpu.dcache.WriteReq_hits::total           1242                       # number of WriteReq hits
+system.cpu.dcache.SoftPFReq_hits::cpu.data           46                       # number of SoftPFReq hits
+system.cpu.dcache.SoftPFReq_hits::total            46                       # number of SoftPFReq hits
+system.cpu.dcache.LoadLockedReq_hits::cpu.data           48                       # number of LoadLockedReq hits
+system.cpu.dcache.LoadLockedReq_hits::total           48                       # number of LoadLockedReq hits
+system.cpu.dcache.StoreCondReq_hits::cpu.data           37                       # number of StoreCondReq hits
+system.cpu.dcache.StoreCondReq_hits::total           37                       # number of StoreCondReq hits
+system.cpu.dcache.demand_hits::cpu.data        863541                       # number of demand (read+write) hits
+system.cpu.dcache.demand_hits::total           863541                       # number of demand (read+write) hits
+system.cpu.dcache.overall_hits::cpu.data       863587                       # number of overall hits
+system.cpu.dcache.overall_hits::total          863587                       # number of overall hits
+system.cpu.dcache.ReadReq_misses::cpu.data          219                       # number of ReadReq misses
+system.cpu.dcache.ReadReq_misses::total           219                       # number of ReadReq misses
+system.cpu.dcache.WriteReq_misses::cpu.data       860535                       # number of WriteReq misses
+system.cpu.dcache.WriteReq_misses::total       860535                       # number of WriteReq misses
+system.cpu.dcache.SoftPFReq_misses::cpu.data           36                       # number of SoftPFReq misses
+system.cpu.dcache.SoftPFReq_misses::total           36                       # number of SoftPFReq misses
+system.cpu.dcache.LoadLockedReq_misses::cpu.data            2                       # number of LoadLockedReq misses
+system.cpu.dcache.LoadLockedReq_misses::total            2                       # number of LoadLockedReq misses
+system.cpu.dcache.demand_misses::cpu.data       860754                       # number of demand (read+write) misses
+system.cpu.dcache.demand_misses::total         860754                       # number of demand (read+write) misses
+system.cpu.dcache.overall_misses::cpu.data       860790                       # number of overall misses
+system.cpu.dcache.overall_misses::total        860790                       # number of overall misses
+system.cpu.dcache.ReadReq_miss_latency::cpu.data     13057000                       # number of ReadReq miss cycles
+system.cpu.dcache.ReadReq_miss_latency::total     13057000                       # number of ReadReq miss cycles
+system.cpu.dcache.WriteReq_miss_latency::cpu.data  70646573816                       # number of WriteReq miss cycles
+system.cpu.dcache.WriteReq_miss_latency::total  70646573816                       # number of WriteReq miss cycles
+system.cpu.dcache.LoadLockedReq_miss_latency::cpu.data       204250                       # number of LoadLockedReq miss cycles
+system.cpu.dcache.LoadLockedReq_miss_latency::total       204250                       # number of LoadLockedReq miss cycles
+system.cpu.dcache.demand_miss_latency::cpu.data  70659630816                       # number of demand (read+write) miss cycles
+system.cpu.dcache.demand_miss_latency::total  70659630816                       # number of demand (read+write) miss cycles
+system.cpu.dcache.overall_miss_latency::cpu.data  70659630816                       # number of overall miss cycles
+system.cpu.dcache.overall_miss_latency::total  70659630816                       # number of overall miss cycles
+system.cpu.dcache.ReadReq_accesses::cpu.data       862518                       # number of ReadReq accesses(hits+misses)
+system.cpu.dcache.ReadReq_accesses::total       862518                       # number of ReadReq accesses(hits+misses)
+system.cpu.dcache.WriteReq_accesses::cpu.data       861777                       # number of WriteReq accesses(hits+misses)
+system.cpu.dcache.WriteReq_accesses::total       861777                       # number of WriteReq accesses(hits+misses)
+system.cpu.dcache.SoftPFReq_accesses::cpu.data           82                       # number of SoftPFReq accesses(hits+misses)
+system.cpu.dcache.SoftPFReq_accesses::total           82                       # number of SoftPFReq accesses(hits+misses)
+system.cpu.dcache.LoadLockedReq_accesses::cpu.data           50                       # number of LoadLockedReq accesses(hits+misses)
+system.cpu.dcache.LoadLockedReq_accesses::total           50                       # number of LoadLockedReq accesses(hits+misses)
+system.cpu.dcache.StoreCondReq_accesses::cpu.data           37                       # number of StoreCondReq accesses(hits+misses)
+system.cpu.dcache.StoreCondReq_accesses::total           37                       # number of StoreCondReq accesses(hits+misses)
+system.cpu.dcache.demand_accesses::cpu.data      1724295                       # number of demand (read+write) accesses
+system.cpu.dcache.demand_accesses::total      1724295                       # number of demand (read+write) accesses
+system.cpu.dcache.overall_accesses::cpu.data      1724377                       # number of overall (read+write) accesses
+system.cpu.dcache.overall_accesses::total      1724377                       # number of overall (read+write) accesses
+system.cpu.dcache.ReadReq_miss_rate::cpu.data     0.000254                       # miss rate for ReadReq accesses
+system.cpu.dcache.ReadReq_miss_rate::total     0.000254                       # miss rate for ReadReq accesses
+system.cpu.dcache.WriteReq_miss_rate::cpu.data     0.998559                       # miss rate for WriteReq accesses
+system.cpu.dcache.WriteReq_miss_rate::total     0.998559                       # miss rate for WriteReq accesses
+system.cpu.dcache.SoftPFReq_miss_rate::cpu.data     0.439024                       # miss rate for SoftPFReq accesses
+system.cpu.dcache.SoftPFReq_miss_rate::total     0.439024                       # miss rate for SoftPFReq accesses
+system.cpu.dcache.LoadLockedReq_miss_rate::cpu.data     0.040000                       # miss rate for LoadLockedReq accesses
+system.cpu.dcache.LoadLockedReq_miss_rate::total     0.040000                       # miss rate for LoadLockedReq accesses
+system.cpu.dcache.demand_miss_rate::cpu.data     0.499192                       # miss rate for demand accesses
+system.cpu.dcache.demand_miss_rate::total     0.499192                       # miss rate for demand accesses
+system.cpu.dcache.overall_miss_rate::cpu.data     0.499189                       # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total     0.499189                       # miss rate for overall accesses
+system.cpu.dcache.ReadReq_avg_miss_latency::cpu.data 59621.004566                       # average ReadReq miss latency
+system.cpu.dcache.ReadReq_avg_miss_latency::total 59621.004566                       # average ReadReq miss latency
+system.cpu.dcache.WriteReq_avg_miss_latency::cpu.data 82096.107440                       # average WriteReq miss latency
+system.cpu.dcache.WriteReq_avg_miss_latency::total 82096.107440                       # average WriteReq miss latency
+system.cpu.dcache.LoadLockedReq_avg_miss_latency::cpu.data       102125                       # average LoadLockedReq miss latency
+system.cpu.dcache.LoadLockedReq_avg_miss_latency::total       102125                       # average LoadLockedReq miss latency
+system.cpu.dcache.demand_avg_miss_latency::cpu.data 82090.389143                       # average overall miss latency
+system.cpu.dcache.demand_avg_miss_latency::total 82090.389143                       # average overall miss latency
+system.cpu.dcache.overall_avg_miss_latency::cpu.data 82086.955954                       # average overall miss latency
+system.cpu.dcache.overall_avg_miss_latency::total 82086.955954                       # average overall miss latency
+system.cpu.dcache.blocked_cycles::no_mshrs     33152624                       # number of cycles access was blocked
+system.cpu.dcache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+system.cpu.dcache.blocked::no_mshrs            860156                       # number of cycles access was blocked
+system.cpu.dcache.blocked::no_targets               0                       # number of cycles access was blocked
+system.cpu.dcache.avg_blocked_cycles::no_mshrs    38.542571                       # average number of cycles each access was blocked
+system.cpu.dcache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+system.cpu.dcache.fast_writes                       0                       # number of fast writes performed
+system.cpu.dcache.cache_copies                      0                       # number of cache copies performed
+system.cpu.dcache.writebacks::writebacks       859662                       # number of writebacks
+system.cpu.dcache.writebacks::total            859662                       # number of writebacks
+system.cpu.dcache.ReadReq_mshr_hits::cpu.data          122                       # number of ReadReq MSHR hits
+system.cpu.dcache.ReadReq_mshr_hits::total          122                       # number of ReadReq MSHR hits
+system.cpu.dcache.WriteReq_mshr_hits::cpu.data          313                       # number of WriteReq MSHR hits
+system.cpu.dcache.WriteReq_mshr_hits::total          313                       # number of WriteReq MSHR hits
+system.cpu.dcache.demand_mshr_hits::cpu.data          435                       # number of demand (read+write) MSHR hits
+system.cpu.dcache.demand_mshr_hits::total          435                       # number of demand (read+write) MSHR hits
+system.cpu.dcache.overall_mshr_hits::cpu.data          435                       # number of overall MSHR hits
+system.cpu.dcache.overall_mshr_hits::total          435                       # number of overall MSHR hits
+system.cpu.dcache.ReadReq_mshr_misses::cpu.data           97                       # number of ReadReq MSHR misses
+system.cpu.dcache.ReadReq_mshr_misses::total           97                       # number of ReadReq MSHR misses
+system.cpu.dcache.WriteReq_mshr_misses::cpu.data       860222                       # number of WriteReq MSHR misses
+system.cpu.dcache.WriteReq_mshr_misses::total       860222                       # number of WriteReq MSHR misses
+system.cpu.dcache.SoftPFReq_mshr_misses::cpu.data           18                       # number of SoftPFReq MSHR misses
+system.cpu.dcache.SoftPFReq_mshr_misses::total           18                       # number of SoftPFReq MSHR misses
+system.cpu.dcache.LoadLockedReq_mshr_misses::cpu.data            2                       # number of LoadLockedReq MSHR misses
+system.cpu.dcache.LoadLockedReq_mshr_misses::total            2                       # number of LoadLockedReq MSHR misses
+system.cpu.dcache.demand_mshr_misses::cpu.data       860319                       # number of demand (read+write) MSHR misses
+system.cpu.dcache.demand_mshr_misses::total       860319                       # number of demand (read+write) MSHR misses
+system.cpu.dcache.overall_mshr_misses::cpu.data       860337                       # number of overall MSHR misses
+system.cpu.dcache.overall_mshr_misses::total       860337                       # number of overall MSHR misses
+system.cpu.dcache.ReadReq_mshr_miss_latency::cpu.data      5881750                       # number of ReadReq MSHR miss cycles
+system.cpu.dcache.ReadReq_mshr_miss_latency::total      5881750                       # number of ReadReq MSHR miss cycles
+system.cpu.dcache.WriteReq_mshr_miss_latency::cpu.data  67800825819                       # number of WriteReq MSHR miss cycles
+system.cpu.dcache.WriteReq_mshr_miss_latency::total  67800825819                       # number of WriteReq MSHR miss cycles
+system.cpu.dcache.SoftPFReq_mshr_miss_latency::cpu.data      1290500                       # number of SoftPFReq MSHR miss cycles
+system.cpu.dcache.SoftPFReq_mshr_miss_latency::total      1290500                       # number of SoftPFReq MSHR miss cycles
+system.cpu.dcache.LoadLockedReq_mshr_miss_latency::cpu.data       196750                       # number of LoadLockedReq MSHR miss cycles
+system.cpu.dcache.LoadLockedReq_mshr_miss_latency::total       196750                       # number of LoadLockedReq MSHR miss cycles
+system.cpu.dcache.demand_mshr_miss_latency::cpu.data  67806707569                       # number of demand (read+write) MSHR miss cycles
+system.cpu.dcache.demand_mshr_miss_latency::total  67806707569                       # number of demand (read+write) MSHR miss cycles
+system.cpu.dcache.overall_mshr_miss_latency::cpu.data  67807998069                       # number of overall MSHR miss cycles
+system.cpu.dcache.overall_mshr_miss_latency::total  67807998069                       # number of overall MSHR miss cycles
+system.cpu.dcache.ReadReq_mshr_miss_rate::cpu.data     0.000112                       # mshr miss rate for ReadReq accesses
+system.cpu.dcache.ReadReq_mshr_miss_rate::total     0.000112                       # mshr miss rate for ReadReq accesses
+system.cpu.dcache.WriteReq_mshr_miss_rate::cpu.data     0.998196                       # mshr miss rate for WriteReq accesses
+system.cpu.dcache.WriteReq_mshr_miss_rate::total     0.998196                       # mshr miss rate for WriteReq accesses
+system.cpu.dcache.SoftPFReq_mshr_miss_rate::cpu.data     0.219512                       # mshr miss rate for SoftPFReq accesses
+system.cpu.dcache.SoftPFReq_mshr_miss_rate::total     0.219512                       # mshr miss rate for SoftPFReq accesses
+system.cpu.dcache.LoadLockedReq_mshr_miss_rate::cpu.data     0.040000                       # mshr miss rate for LoadLockedReq accesses
+system.cpu.dcache.LoadLockedReq_mshr_miss_rate::total     0.040000                       # mshr miss rate for LoadLockedReq accesses
+system.cpu.dcache.demand_mshr_miss_rate::cpu.data     0.498940                       # mshr miss rate for demand accesses
+system.cpu.dcache.demand_mshr_miss_rate::total     0.498940                       # mshr miss rate for demand accesses
+system.cpu.dcache.overall_mshr_miss_rate::cpu.data     0.498926                       # mshr miss rate for overall accesses
+system.cpu.dcache.overall_mshr_miss_rate::total     0.498926                       # mshr miss rate for overall accesses
+system.cpu.dcache.ReadReq_avg_mshr_miss_latency::cpu.data 60636.597938                       # average ReadReq mshr miss latency
+system.cpu.dcache.ReadReq_avg_mshr_miss_latency::total 60636.597938                       # average ReadReq mshr miss latency
+system.cpu.dcache.WriteReq_avg_mshr_miss_latency::cpu.data 78817.823561                       # average WriteReq mshr miss latency
+system.cpu.dcache.WriteReq_avg_mshr_miss_latency::total 78817.823561                       # average WriteReq mshr miss latency
+system.cpu.dcache.SoftPFReq_avg_mshr_miss_latency::cpu.data 71694.444444                       # average SoftPFReq mshr miss latency
+system.cpu.dcache.SoftPFReq_avg_mshr_miss_latency::total 71694.444444                       # average SoftPFReq mshr miss latency
+system.cpu.dcache.LoadLockedReq_avg_mshr_miss_latency::cpu.data        98375                       # average LoadLockedReq mshr miss latency
+system.cpu.dcache.LoadLockedReq_avg_mshr_miss_latency::total        98375                       # average LoadLockedReq mshr miss latency
+system.cpu.dcache.demand_avg_mshr_miss_latency::cpu.data 78815.773648                       # average overall mshr miss latency
+system.cpu.dcache.demand_avg_mshr_miss_latency::total 78815.773648                       # average overall mshr miss latency
+system.cpu.dcache.overall_avg_mshr_miss_latency::cpu.data 78815.624655                       # average overall mshr miss latency
+system.cpu.dcache.overall_avg_mshr_miss_latency::total 78815.624655                       # average overall mshr miss latency
+system.cpu.dcache.no_allocate_misses                0                       # Number of misses that were no-allocate
+system.cpu.icache.tags.replacements                 0                       # number of replacements
+system.cpu.icache.tags.tagsinuse           330.540550                       # Cycle average of tags in use
+system.cpu.icache.tags.total_refs                2860                       # Total number of references to valid blocks.
+system.cpu.icache.tags.sampled_refs               457                       # Sample count of references to valid blocks.
+system.cpu.icache.tags.avg_refs              6.258206                       # Average number of references to valid blocks.
+system.cpu.icache.tags.warmup_cycle                 0                       # Cycle when the warmup percentage was hit.
+system.cpu.icache.tags.occ_blocks::cpu.inst   330.540550                       # Average occupied blocks per requestor
+system.cpu.icache.tags.occ_percent::cpu.inst     0.040349                       # Average percentage of cache occupancy
+system.cpu.icache.tags.occ_percent::total     0.040349                       # Average percentage of cache occupancy
+system.cpu.icache.tags.occ_task_id_blocks::1024          457                       # Occupied blocks per task id
+system.cpu.icache.tags.age_task_id_blocks_1024::0          126                       # Occupied blocks per task id
+system.cpu.icache.tags.age_task_id_blocks_1024::4          331                       # Occupied blocks per task id
+system.cpu.icache.tags.occ_task_id_percent::1024     0.055786                       # Percentage of cache occupancy per task id
+system.cpu.icache.tags.tag_accesses              7429                       # Number of tag accesses
+system.cpu.icache.tags.data_accesses             7429                       # Number of data accesses
+system.cpu.icache.ReadReq_hits::cpu.inst         2860                       # number of ReadReq hits
+system.cpu.icache.ReadReq_hits::total            2860                       # number of ReadReq hits
+system.cpu.icache.demand_hits::cpu.inst          2860                       # number of demand (read+write) hits
+system.cpu.icache.demand_hits::total             2860                       # number of demand (read+write) hits
+system.cpu.icache.overall_hits::cpu.inst         2860                       # number of overall hits
+system.cpu.icache.overall_hits::total            2860                       # number of overall hits
+system.cpu.icache.ReadReq_misses::cpu.inst          626                       # number of ReadReq misses
+system.cpu.icache.ReadReq_misses::total           626                       # number of ReadReq misses
+system.cpu.icache.demand_misses::cpu.inst          626                       # number of demand (read+write) misses
+system.cpu.icache.demand_misses::total            626                       # number of demand (read+write) misses
+system.cpu.icache.overall_misses::cpu.inst          626                       # number of overall misses
+system.cpu.icache.overall_misses::total           626                       # number of overall misses
+system.cpu.icache.ReadReq_miss_latency::cpu.inst     34476500                       # number of ReadReq miss cycles
+system.cpu.icache.ReadReq_miss_latency::total     34476500                       # number of ReadReq miss cycles
+system.cpu.icache.demand_miss_latency::cpu.inst     34476500                       # number of demand (read+write) miss cycles
+system.cpu.icache.demand_miss_latency::total     34476500                       # number of demand (read+write) miss cycles
+system.cpu.icache.overall_miss_latency::cpu.inst     34476500                       # number of overall miss cycles
+system.cpu.icache.overall_miss_latency::total     34476500                       # number of overall miss cycles
+system.cpu.icache.ReadReq_accesses::cpu.inst         3486                       # number of ReadReq accesses(hits+misses)
+system.cpu.icache.ReadReq_accesses::total         3486                       # number of ReadReq accesses(hits+misses)
+system.cpu.icache.demand_accesses::cpu.inst         3486                       # number of demand (read+write) accesses
+system.cpu.icache.demand_accesses::total         3486                       # number of demand (read+write) accesses
+system.cpu.icache.overall_accesses::cpu.inst         3486                       # number of overall (read+write) accesses
+system.cpu.icache.overall_accesses::total         3486                       # number of overall (read+write) accesses
+system.cpu.icache.ReadReq_miss_rate::cpu.inst     0.179575                       # miss rate for ReadReq accesses
+system.cpu.icache.ReadReq_miss_rate::total     0.179575                       # miss rate for ReadReq accesses
+system.cpu.icache.demand_miss_rate::cpu.inst     0.179575                       # miss rate for demand accesses
+system.cpu.icache.demand_miss_rate::total     0.179575                       # miss rate for demand accesses
+system.cpu.icache.overall_miss_rate::cpu.inst     0.179575                       # miss rate for overall accesses
+system.cpu.icache.overall_miss_rate::total     0.179575                       # miss rate for overall accesses
+system.cpu.icache.ReadReq_avg_miss_latency::cpu.inst 55074.281150                       # average ReadReq miss latency
+system.cpu.icache.ReadReq_avg_miss_latency::total 55074.281150                       # average ReadReq miss latency
+system.cpu.icache.demand_avg_miss_latency::cpu.inst 55074.281150                       # average overall miss latency
+system.cpu.icache.demand_avg_miss_latency::total 55074.281150                       # average overall miss latency
+system.cpu.icache.overall_avg_miss_latency::cpu.inst 55074.281150                       # average overall miss latency
+system.cpu.icache.overall_avg_miss_latency::total 55074.281150                       # average overall miss latency
+system.cpu.icache.blocked_cycles::no_mshrs          136                       # number of cycles access was blocked
+system.cpu.icache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+system.cpu.icache.blocked::no_mshrs                 4                       # number of cycles access was blocked
+system.cpu.icache.blocked::no_targets               0                       # number of cycles access was blocked
+system.cpu.icache.avg_blocked_cycles::no_mshrs           34                       # average number of cycles each access was blocked
+system.cpu.icache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+system.cpu.icache.fast_writes                       0                       # number of fast writes performed
+system.cpu.icache.cache_copies                      0                       # number of cache copies performed
+system.cpu.icache.ReadReq_mshr_hits::cpu.inst          168                       # number of ReadReq MSHR hits
+system.cpu.icache.ReadReq_mshr_hits::total          168                       # number of ReadReq MSHR hits
+system.cpu.icache.demand_mshr_hits::cpu.inst          168                       # number of demand (read+write) MSHR hits
+system.cpu.icache.demand_mshr_hits::total          168                       # number of demand (read+write) MSHR hits
+system.cpu.icache.overall_mshr_hits::cpu.inst          168                       # number of overall MSHR hits
+system.cpu.icache.overall_mshr_hits::total          168                       # number of overall MSHR hits
+system.cpu.icache.ReadReq_mshr_misses::cpu.inst          458                       # number of ReadReq MSHR misses
+system.cpu.icache.ReadReq_mshr_misses::total          458                       # number of ReadReq MSHR misses
+system.cpu.icache.demand_mshr_misses::cpu.inst          458                       # number of demand (read+write) MSHR misses
+system.cpu.icache.demand_mshr_misses::total          458                       # number of demand (read+write) MSHR misses
+system.cpu.icache.overall_mshr_misses::cpu.inst          458                       # number of overall MSHR misses
+system.cpu.icache.overall_mshr_misses::total          458                       # number of overall MSHR misses
+system.cpu.icache.ReadReq_mshr_miss_latency::cpu.inst     25999250                       # number of ReadReq MSHR miss cycles
+system.cpu.icache.ReadReq_mshr_miss_latency::total     25999250                       # number of ReadReq MSHR miss cycles
+system.cpu.icache.demand_mshr_miss_latency::cpu.inst     25999250                       # number of demand (read+write) MSHR miss cycles
+system.cpu.icache.demand_mshr_miss_latency::total     25999250                       # number of demand (read+write) MSHR miss cycles
+system.cpu.icache.overall_mshr_miss_latency::cpu.inst     25999250                       # number of overall MSHR miss cycles
+system.cpu.icache.overall_mshr_miss_latency::total     25999250                       # number of overall MSHR miss cycles
+system.cpu.icache.ReadReq_mshr_miss_rate::cpu.inst     0.131383                       # mshr miss rate for ReadReq accesses
+system.cpu.icache.ReadReq_mshr_miss_rate::total     0.131383                       # mshr miss rate for ReadReq accesses
+system.cpu.icache.demand_mshr_miss_rate::cpu.inst     0.131383                       # mshr miss rate for demand accesses
+system.cpu.icache.demand_mshr_miss_rate::total     0.131383                       # mshr miss rate for demand accesses
+system.cpu.icache.overall_mshr_miss_rate::cpu.inst     0.131383                       # mshr miss rate for overall accesses
+system.cpu.icache.overall_mshr_miss_rate::total     0.131383                       # mshr miss rate for overall accesses
+system.cpu.icache.ReadReq_avg_mshr_miss_latency::cpu.inst 56766.921397                       # average ReadReq mshr miss latency
+system.cpu.icache.ReadReq_avg_mshr_miss_latency::total 56766.921397                       # average ReadReq mshr miss latency
+system.cpu.icache.demand_avg_mshr_miss_latency::cpu.inst 56766.921397                       # average overall mshr miss latency
+system.cpu.icache.demand_avg_mshr_miss_latency::total 56766.921397                       # average overall mshr miss latency
+system.cpu.icache.overall_avg_mshr_miss_latency::cpu.inst 56766.921397                       # average overall mshr miss latency
+system.cpu.icache.overall_avg_mshr_miss_latency::total 56766.921397                       # average overall mshr miss latency
+system.cpu.icache.no_allocate_misses                0                       # Number of misses that were no-allocate
+system.membus.trans_dist::ReadReq                 575                       # Transaction distribution
+system.membus.trans_dist::ReadResp                574                       # Transaction distribution
+system.membus.trans_dist::Writeback            859662                       # Transaction distribution
+system.membus.trans_dist::ReadExReq            860222                       # Transaction distribution
+system.membus.trans_dist::ReadExResp           860222                       # Transaction distribution
+system.membus.pkt_count_system.cpu.icache.mem_side::system.mem_ctrls.port          915                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu.dcache.mem_side::system.mem_ctrls.port      2580340                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count::total                2581255                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu.icache.mem_side::system.mem_ctrls.port        29248                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu.dcache.mem_side::system.mem_ctrls.port    110080064                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size::total               110109312                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.snoops                                0                       # Total snoops (count)
+system.membus.snoop_fanout::samples           1720459                       # Request fanout histogram
+system.membus.snoop_fanout::mean                    1                       # Request fanout histogram
+system.membus.snoop_fanout::stdev                   0                       # Request fanout histogram
+system.membus.snoop_fanout::underflows              0      0.00%      0.00% # Request fanout histogram
+system.membus.snoop_fanout::0                       0      0.00%      0.00% # Request fanout histogram
+system.membus.snoop_fanout::1                 1720459    100.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::2                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::overflows               0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::min_value               1                       # Request fanout histogram
+system.membus.snoop_fanout::max_value               1                       # Request fanout histogram
+system.membus.snoop_fanout::total             1720459                       # Request fanout histogram
+system.membus.reqLayer0.occupancy          5220716000                       # Layer occupancy (ticks)
+system.membus.reqLayer0.utilization              30.7                       # Layer utilization (%)
+system.membus.respLayer1.occupancy            2434250                       # Layer occupancy (ticks)
+system.membus.respLayer1.utilization              0.0                       # Layer utilization (%)
+system.membus.respLayer2.occupancy         4458902500                       # Layer occupancy (ticks)
+system.membus.respLayer2.utilization             26.2                       # Layer utilization (%)
+
+---------- End Simulation Statistics   ----------

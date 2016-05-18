@@ -226,7 +226,7 @@ echo "" | tee -a $SCRIPT_OUT
 # $GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err <YOUR_SIMULATOR_OPTIONS_HERE> \| tee -a $SCRIPT_OUT
 
 #################  OoO
-#$GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=DerivO3CPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
+$GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=DerivO3CPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
 
 ################# Timing simple
-$GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=TimingSimpleCPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
+# $GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=TimingSimpleCPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
