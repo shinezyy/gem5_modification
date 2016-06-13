@@ -1,0 +1,36 @@
+Command line:
+./run_gem5_arm_spec06_benchmark.sh bzip2 /home/cssys/my_projects/gem5/stats/bzip2
+================= Hardcoded directories ==================
+GEM5_DIR:                                     /home/cssys/my_projects/gem5
+SPEC_DIR:                                     /ext_home/program_files/spec
+==================== Script inputs =======================
+BENCHMARK:                                    bzip2
+OUTPUT_DIR:                                   /home/cssys/my_projects/gem5/stats/bzip2
+==========================================================
+
+Changing to SPEC benchmark runtime directory: /ext_home/program_files/spec/benchspec/CPU2006/401.bzip2/exe
+
+
+--------- Here goes nothing! Starting gem5! ------------
+
+
+warn: DRAM device capacity (gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jun 11 2016 19:50:26
+gem5 started Jun 13 2016 10:05:13
+gem5 executing on cssys-Lenovo-Product
+command line: /home/cssys/my_projects/gem5/build/ARM/gem5.opt --outdir=/home/cssys/my_projects/gem5/stats/bzip2 /home/cssys/my_projects/gem5/configs/example/spec06_config.py --benchmark=bzip2 --benchmark_stdout=/home/cssys/my_projects/gem5/stats/bzip2/bzip2.out --benchmark_stderr=/home/cssys/my_projects/gem5/stats/bzip2/bzip2.err --mem-size=4GB --cpu-type=TimingSimpleCPU
+
+Selected SPEC_CPU2006 benchmark
+--> bzip2
+Process stdout file: /home/cssys/my_projects/gem5/stats/bzip2/bzip2.out
+Process stderr file: /home/cssys/my_projects/gem5/stats/bzip2/bzip2.err
+['bzip2_base.gcc-arm-A7-little-endian', '/ext_home/program_files/spec/benchspec/CPU2006/401.bzip2/data/ref/input/chicken.jpg', '30']
+Global frequency set at 1000000000000 ticks per second
+8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+0: system.remote_gdb.listener: listening for remote gdb #0 on port 7001
+**** REAL SIMULATION ****
+info: Entering event queue @ 0.  Starting simulation...
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.

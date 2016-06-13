@@ -20,7 +20,7 @@
  
 ############ DIRECTORY VARIABLES: MODIFY ACCORDINGLY #############
 # GEM5_DIR=<PATH_TO_YOUR_GEM5_INSTALL>          # Install location of gem5
-GEM5_DIR=/home/zyy/my_projects/gem5
+GEM5_DIR=/home/cssys/my_projects/gem5
 # SPEC_DIR=<PATH_TO_YOUR_SPEC_CPU2006_INSTALL>  # Install location of your SPEC2006 benchmarks
 SPEC_DIR=/ext_home/program_files/spec
 ##################################################################
@@ -229,4 +229,5 @@ echo "" | tee -a $SCRIPT_OUT
 # $GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=DerivO3CPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
 
 ################# Timing simple
-$GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=TimingSimpleCPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
+# $GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=TimingSimpleCPU --l1d_size=512kB --l1i_size=512kB --caches | tee -a $SCRIPT_OUT
+$GEM5_DIR/build/ARM/gem5.opt --outdir=$OUTPUT_DIR $GEM5_DIR/configs/example/spec06_config.py --benchmark=$BENCHMARK --benchmark_stdout=$OUTPUT_DIR/$BENCHMARK.out --benchmark_stderr=$OUTPUT_DIR/$BENCHMARK.err --mem-size=4GB --cpu-type=TimingSimpleCPU| tee -a $SCRIPT_OUT

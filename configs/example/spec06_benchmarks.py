@@ -6,12 +6,13 @@ from m5.objects import *
 #spec_dir = '<FULL_PATH_TO_YOUR_SPEC_CPU2006_INSTALL>'
 #out_dir = '<FULL_PATH_TO_DESIRED_OUTPUT_DIRECTORY>'
  
-my_suffix = '_base.mips'
+# my_suffix = '_base.gcc-arm-A7-little-endian-NVM'
+my_suffix = '_base.gcc-arm-A7-little-endian'
 # my_suffix = '_base.gcc43-64bit'
  
 #temp
 #binary_dir = spec_dir
-#data_dir = spec_dir
+data_dir = '/ext_home/program_files/spec/benchspec/CPU2006/401.bzip2/data/ref/input/'
  
 #400.perlbench
 perlbench = LiveProcess()
@@ -30,8 +31,8 @@ bzip2.executable =  'bzip2' + my_suffix
 # TEST CMDS
 #bzip2.cmd = [bzip2.executable] + ['input.program', '5']
 # REF CMDS
-bzip2.cmd = [bzip2.executable] + ['input.source', '280']
-#bzip2.cmd = [bzip2.executable] + ['chicken.jpg', '30']
+#bzip2.cmd = [bzip2.executable] + ['input.source', '280']
+bzip2.cmd = [bzip2.executable] + [data_dir+'chicken.jpg', '30']
 #bzip2.cmd = [bzip2.executable] + ['liberty.jpg', '30']
 #bzip2.cmd = [bzip2.executable] + ['input.program', '280']
 #bzip2.cmd = [bzip2.executable] + ['text.html', '280']
@@ -44,11 +45,11 @@ gcc.executable = 'gcc' + my_suffix
 # TEST CMDS
 #gcc.cmd = [gcc.executable] + ['cccp.i', '-o', 'cccp.s']
 # REF CMDS
-gcc.cmd = [gcc.executable] + ['166.i', '-o', '166.s']
+# gcc.cmd = [gcc.executable] + ['166.i', '-o', '166.s']
 #gcc.cmd = [gcc.executable] + ['200.i', '-o', '200.s']
 #gcc.cmd = [gcc.executable] + ['c-typeck.i', '-o', 'c-typeck.s']
 #gcc.cmd = [gcc.executable] + ['cp-decl.i', '-o', 'cp-decl.s']
-#gcc.cmd = [gcc.executable] + ['expr.i', '-o', 'expr.s']
+gcc.cmd = [gcc.executable] + [data_dir+'expr.in', '-o', 'expr.s']
 #gcc.cmd = [gcc.executable] + ['expr2.i', '-o', 'expr2.s']
 #gcc.cmd = [gcc.executable] + ['g23.i', '-o', 'g23.s']
 #gcc.cmd = [gcc.executable] + ['s04.i', '-o', 's04.s']
@@ -85,7 +86,7 @@ mcf.executable =  'mcf' + my_suffix
 # TEST CMDS
 #mcf.cmd = [mcf.executable] + ['inp.in']
 # REF CMDS
-mcf.cmd = [mcf.executable] + ['inp.in']
+mcf.cmd = [mcf.executable] + [data_dir+'inp.in']
 #mcf.output = out_dir + 'mcf.out'
  
 #433.milc

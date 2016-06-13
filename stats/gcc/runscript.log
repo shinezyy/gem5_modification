@@ -1,0 +1,10 @@
+Command line:
+./run_gem5_arm_spec06_benchmark.sh gcc ./stats/gcc
+================= Hardcoded directories ==================
+GEM5_DIR:                                     /home/cssys/my_projects/gem5
+SPEC_DIR:                                     /ext_home/program_files/spec
+==================== Script inputs =======================
+BENCHMARK:                                    gcc
+OUTPUT_DIR:                                   ./stats/gcc
+==========================================================
+Changing to SPEC benchmark runtime directory: /ext_home/program_files/spec/benchspec/CPU2006/403.gcc/exe
